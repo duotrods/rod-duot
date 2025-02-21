@@ -13,13 +13,16 @@ const Navbar = () => {
             </a>
         </div>
 
-         {/*Navigation Links*/}
-         <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
+         {/*Navigation 
+            <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
             <a href="/" className=''>Home</a>
             <a href="/" className=''>About</a>
             <a href="/" className=''>Portfolio</a>
             <a href="/" className=''>Contact Me</a>
         </div>
+         
+         Links*/}
+         
 
          {/*Social Medi Links*/}
         <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
