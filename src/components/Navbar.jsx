@@ -1,5 +1,5 @@
 import { FaBehance, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import logo from '../assets/logo.png'
+import logo from '../assets/Logo.png'
 import { FaSquareBehance } from 'react-icons/fa6'
 
 const Navbar = () => {
