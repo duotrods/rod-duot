@@ -1,6 +1,6 @@
 //Projects
 import hrportal from "../assets/projects/HR Portal.png";
-import taskade from "../assets/projects/taskadee.png";
+import taskade from "../assets/projects/Taskadee.png";
 import mistify from "../assets/projects/Mistify.png";
 import mistify2 from "../assets/projects/Mistify Admin.png";
 import instagram from "../assets/projects/instagram.png";
