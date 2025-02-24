@@ -25,7 +25,7 @@ const Navbar = () => {
          
 
          {/*Social Medi Links*/}
-        <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
+        <div className='m-8 flex items-center justify-center gap-4 text-3xl'>
             <a href="https://www.linkedin.com/in/rod-olinor-du-ot-87a912278/"
                 target='_blank'
                 rel='noopener noreferrer'
