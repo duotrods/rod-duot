@@ -26,15 +26,15 @@ import { motion } from 'framer-motion'
                       whileInView={{ opacity: 1, x: 0}}
                       initial={{ opacity: 0, x: -100}}
                       transition={{ duration: 1}}
-                      className="w-full max-w-xl lg:w-3/4">
+                      className="w-full max-w-xl lg:w-3/4 mb-6">
                         <h3 className="mb-2 font-semibold ">
                             {experience.role}
                             <span className="text-sm text-stone-400"> at {experience.company}</span>
                         </h3>
-                        <p className="mb-4 text-stone-400">{experience.description}</p>
+                        <p className="mb-6 text-stone-400">{experience.description}</p>
 
                         {experience.technologies.map((tech, index) => (
-                        <span key={index} className="mr-2 bg-stone-900 p-2 text-s font-medium text-stone-300">{tech}</span>
+                        <span key={index} className="mr-2 bg-stone-900 p-2 pl-4 pr-4 text-s rounded-full font-medium text-stone-300">{tech}</span>
                         ))}
                     </motion.div>
 

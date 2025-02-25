@@ -2,6 +2,7 @@ import Hero from "./components/Hero"
 import Technologies from "./components/Technologies"
 import Project from "./components/Project"
 import Work from "./components/Work"
+import Services from "./components/Services"
 import Contact from "./components/Contact"
 import Navbar from "./components/Navbar"
 
@@ -23,6 +24,7 @@ const App = () => {
         <Work />
         <Technologies />
         <Project />
+        <Services />
         <Contact />
       </div>
     </div>

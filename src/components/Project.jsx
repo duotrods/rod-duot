@@ -40,7 +40,7 @@ const Project = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: index % 2 === 0 ? 100 : -100 }}
               transition={{ duration: 1 }}
-              className="p-8 sm:mb-10  max-w-xl lg:w-3/4 bg-white/5 border-2 border-white/20 backdrop-blur-[5.4px] rounded-lg"
+              className="p-8 sm:mb-10  max-w-xl lg:w-3/4 bg-white/5 border-2 border-white/15 backdrop-blur-[1.4px] rounded-lg"
             >
              
               <h3 className=" mb-2 font-semibold text-2xl">{project.title}</h3>

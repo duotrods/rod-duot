@@ -16,7 +16,7 @@ import jersey3 from "../assets/projects/jersey3.png";
 import DOSTcerts from "../assets/projects/DOSTCerts.png";
 import DOSTposter from "../assets/projects/DOSTPosters.png";
 
-//Icons
+//Brand Logo
 import xd from "../assets/tools/adobe-xd.svg";
 import angular from "../assets/tools/angular.svg";
 import bootstrap from "../assets/tools/bootstrap.svg";
@@ -48,18 +48,23 @@ import vite from "../assets/tools/vite.svg";
 import wordpress from "../assets/tools/wordpress.svg";
 import xampp from "../assets/tools/xampp.svg";
 
+//Icons
+import { FaPencilRuler, FaLaptopCode, FaMobileAlt, FaDraftingCompass, FaCode, FaLayerGroup } from "react-icons/fa";
+import { MdChatBubble, MdWorkOutline, MdSupportAgent } from "react-icons/md";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+
+export const HERO_CONTENT = `I’m an experience UI/UX Designer, Graphic Designer, Virtual Assistant, and Mobile App & Web Developer with 4+ years in the field, creating Digital Experiences You Deserve. I am a graduate of Bachelor of Science in Information Technology ind Davao del Norte State College. I have worked with both small and large firms, including Merryl’s Consumer Goods Trading, Scentific, Aces Polytecnic College, and the Department of Science and Technology - Davao del Norte. I am currently working as a Web Designer and Full Stack Developer  at SixEleven Global Services and Solutions. I am also open to part-time opportunities or project-based work.`;
+
+export const ABOUT_TEXT = `I am a highly motivated and detail-oriented professional with a passion for creating innovative and user-friendly digital experiences. I have a strong background in UI/UX design, web development, and graphic design, with a proven track record of delivering high-quality projects that exceed client expectations. I am proficient in a wide range of design and development tools, including Figma, Adobe Creative Suite, and Vite.js, and I am always eager to learn new technologies and expand my skill set. I am committed to delivering exceptional results and providing the best possible experience for my clients and end users.`;
 
 export const EXPERIENCES = [
   {
     year: "Nov 2024 - Present",
     role: "UI/UX Designer | Fullstack Developer",
     company: "SixEleven Global Services and Solutions",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    description: `The Developer of the 611 HR Portal, a comprehensive platform for human resources, combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.`,
+    technologies: ["Figma", "Wordpress", "Elementor", "XAMPP"],
   },
   {
     year: "Aug -Nov 2024",
@@ -106,54 +111,6 @@ export const PROJECTS = [
     ],
   },
   {
-    categories: ["UI/UX Design", "App Design"],
-    title: "Taskade",
-    image: taskade,
-    description:
-      "A school project productivity app designed to simplify your life! Whether you’re managing tasks, organizing projects, or brainstorming ideas, Taskade provides a seamless and intuitive experience for everyone, including those with visual impairments.",
-    technologies: [{ name: "Figma", image: figma }],
-  },
-  {
-    categories: ["UI/UX Design", "App Design"],
-    title: "Mistify: Smart Humidity Management Solution for Plants Cultivators",
-    image: mistify,
-    description:
-      "Smart assistant for managing humidity in plant cultivation. With cutting-edge features designed for efficiency, Mistify helps you monitor, control, and optimize your mushroom growth environment effortlessly. Mistify ensures your plants thrive under ideal conditions, boosting yields and reducing waste.",
-    technologies: [{ image: figma }, { image: photoshop }],
-  },
-  {
-    categories: ["UI/UX Design", "Web Design"],
-    title: "Mistify Admin UI",
-    image: mistify2,
-    description:
-      "Centralized hub for managing and monitoring your mushroom cultivation operations. Designed for precision and clarity, the portal provides comprehensive insights into humidity, temperature, and system performance.  Take your plant cultivation management to the next level with the Mistify Admin Portal!",
-    technologies: [{ image: figma }],
-  },
-  {
-    categories: ["UI/UX Design", "App Design"],
-    title: "Instagram UI Redesign",
-    image: instagram,
-    description:
-      "This is my personal Instagram’s re imagined user interface design, blending modern aesthetics with intuitive functionality to enhance your social experience. Whether you're scrolling through your feed or managing your brand, this interface ensures everything is just a tap away. Experience the future of social interaction with Instagram’s refined UI design!",
-    technologies: [{ image: figma }],
-  },
-  {
-    categories: ["UI/UX Design", "App Design"],
-    title: "VaxCare",
-    image: vaxcare,
-    description:
-      "Your comprehensive solution for vaccine scheduling and management. Designed to prioritize user convenience, VaxCare ensures that individuals and families stay up-to-date with their immunizations effortlessly. Stay protected, stay informed, and stay healthy with VaxCare!",
-    technologies: [{ image: figma }],
-  },
-  {
-    categories: ["UI/UX Design", "Web Design"],
-    title: "Alfa Manufacturing Group Website",
-    image: alfa,
-    description:
-      "Alfa Manufacturing Group’s official website, designed to showcase their products and services. The website features a clean, modern design that highlights the company’s commitment to quality and innovation. With a user-friendly interface and responsive layout, the site provides an engaging experience for visitors.",
-    technologies: [{ image: figma }],
-  },
-  {
     categories: ["UI/UX Design", "Web Design", "Web Development"],
     title: "DOST CSFS",
     image: csfs,
@@ -184,6 +141,54 @@ export const PROJECTS = [
     description:
       "I developed an interactive scatter plot using Fishbowl Inventory, allowing for in-depth analysis of data relationships. Integrated filtering options for dynamic visualization, enabling users to view specific data ranges and insights. The scatter plot provides a comprehensive overview of inventory trends and performance metrics, empowering users to make informed decisions.",
     technologies: [{ image: figma }, { image: fishbowl }, { image: html }, { image: css }, { image: js }, { image: mysql }],
+  },
+  {
+    categories: ["UI/UX Design", "Web Design"],
+    title: "Alfa Manufacturing Group Website",
+    image: alfa,
+    description:
+      "Alfa Manufacturing Group’s official website, designed to showcase their products and services. The website features a clean, modern design that highlights the company’s commitment to quality and innovation. With a user-friendly interface and responsive layout, the site provides an engaging experience for visitors.",
+    technologies: [{ image: figma }],
+  },
+  {
+    categories: ["UI/UX Design", "App Design"],
+    title: "Mistify: Smart Humidity Management Solution for Plants Cultivators",
+    image: mistify,
+    description:
+      "Smart assistant for managing humidity in plant cultivation. With cutting-edge features designed for efficiency, Mistify helps you monitor, control, and optimize your mushroom growth environment effortlessly. Mistify ensures your plants thrive under ideal conditions, boosting yields and reducing waste.",
+    technologies: [{ image: figma }, { image: photoshop }],
+  },
+  {
+    categories: ["UI/UX Design", "Web Design"],
+    title: "Mistify Admin UI",
+    image: mistify2,
+    description:
+      "Centralized hub for managing and monitoring your mushroom cultivation operations. Designed for precision and clarity, the portal provides comprehensive insights into humidity, temperature, and system performance.  Take your plant cultivation management to the next level with the Mistify Admin Portal!",
+    technologies: [{ image: figma }],
+  },
+  {
+    categories: ["UI/UX Design", "App Design"],
+    title: "Taskade",
+    image: taskade,
+    description:
+      "A productivity app designed to simplify your life! Whether you’re managing tasks, organizing projects, or brainstorming ideas, Taskade provides a seamless and intuitive experience for everyone, including those with visual impairments.",
+    technologies: [{ name: "Figma", image: figma }],
+  },
+  {
+    categories: ["UI/UX Design", "App Design"],
+    title: "Instagram UI Redesign",
+    image: instagram,
+    description:
+      "This is my personal Instagram’s re imagined user interface design, blending modern aesthetics with intuitive functionality to enhance your social experience. Whether you're scrolling through your feed or managing your brand, this interface ensures everything is just a tap away. Experience the future of social interaction with Instagram’s refined UI design!",
+    technologies: [{ image: figma }],
+  },
+  {
+    categories: ["UI/UX Design", "App Design"],
+    title: "VaxCare",
+    image: vaxcare,
+    description:
+      "Your comprehensive solution for vaccine scheduling and management. Designed to prioritize user convenience, VaxCare ensures that individuals and families stay up-to-date with their immunizations effortlessly. Stay protected, stay informed, and stay healthy with VaxCare!",
+    technologies: [{ image: figma }],
   },
   {
     categories: ["Graphic Design", "Jersey Design"],
@@ -352,4 +357,55 @@ export const TECHNOLOGIES3 = [
     delay: 2.5,
   },
 
+];
+
+
+
+
+export const SERVICES = [
+  { 
+    icon: FaPencilRuler,   
+    title: "Graphic Design", 
+    description: "I specialize in logo design, jersey layouts, signage, social media posts, and certificates." 
+  },
+  { 
+    icon: FaDraftingCompass, 
+    title: "UI/UX Design", 
+    description: "Creating seamless and intuitive user experiences from wireframes to interactive designs." 
+  },
+  { 
+    icon: FaLaptopCode, 
+    title: "Prototyping", 
+    description: "Building responsive websites using PHP, HTML, CSS, Vite.js, and React." 
+  },
+  { 
+    icon: FaLayerGroup, 
+    title: "Wireframing", 
+    description: "Designing wireframes to outline clear user flows and layouts for websites and apps." 
+  },
+  { 
+    icon: FaCode, 
+    title: "Web Dev", 
+    description: "Building dynamic websites using PHP, HTML, CSS, Vite.js, and React." 
+  },
+  { 
+    icon: FaMobileAlt, 
+    title: "Mobile Dev", 
+    description: "Developing apps using Flutter and Ionic Angular for iOS and Android." 
+  },
+  { 
+    icon: MdSupportAgent, 
+    title: "IT Support",
+    description: "Providing technical support to students and faculty, troubleshooting hardware and software issues." 
+  },
+  { 
+    icon: MdChatBubble, 
+    title: "Chat Support",
+    description: "Resolving customer inquiries and providing real-time delivery tracking and support." 
+  },
+  { 
+    icon: MdWorkOutline, 
+    title: "Virtual Assistant",
+    description: "Assisting clients with administrative tasks, email management, and customer support." 
+  },
 ];
