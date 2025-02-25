@@ -35,14 +35,14 @@ export const Hero = () => {
                         Rod Du-ot
                     </motion.h1>
                     <motion.span variants={childVariants} className="mt-2 text-xl text-stone-200">Web Developer | Graphic Designer | UI/UX Designer | Virtual Assistant</motion.span>
-                    <motion.p variants={childVariants} className="my-2 mx-w-lg py-6 text-md leading-[1.8] tracking-tighter">
+                    <motion.p variants={childVariants} className="my-2 mx-w-lg py-6 text-md leading-[1.8] tracking-tighter text-sm text-justify">
                         {HERO_CONTENT}
                     </motion.p>
                     <motion.a variants={childVariants} href="/myresume.pdf"
                         target='_blank'
                         rel='noopener noreferrer'
                         download
-                        className='bg-white rounded-full p-4 text-md text-stone-800 mb-10'>
+                        className='bg-blue-600 rounded-full p-4 text-md font-medium mb-10 hover:bg-blue-800 hover:text-stone-100'>
                             Downdload Resume
                     </motion.a>
                     

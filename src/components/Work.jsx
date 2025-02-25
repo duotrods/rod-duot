@@ -27,14 +27,14 @@ import { motion } from 'framer-motion'
                       initial={{ opacity: 0, x: -100}}
                       transition={{ duration: 1}}
                       className="w-full max-w-xl lg:w-3/4 mb-6">
-                        <h3 className="mb-2 font-semibold ">
+                        <h3 className="mb-2 text-xl font-semibold ">
                             {experience.role}
-                            <span className="text-sm text-stone-400"> at {experience.company}</span>
+                            <span className="text-sm font-medium text-stone-400"> at {experience.company}</span>
                         </h3>
-                        <p className="mb-6 text-stone-400">{experience.description}</p>
+                        <p className="mt-4 mb-6  text-sm text-stone-500">{experience.description}</p>
 
                         {experience.technologies.map((tech, index) => (
-                        <span key={index} className="mr-2 bg-stone-900 p-2 pl-4 pr-4 text-s rounded-full font-medium text-stone-300">{tech}</span>
+                        <span key={index} className="mr-2 bg-[#036BFF] p-2 pl-4 pr-4 text-xs rounded-full font-medium text-stone-300">{tech}</span>
                         ))}
                     </motion.div>
 
