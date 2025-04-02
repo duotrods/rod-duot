@@ -18,7 +18,7 @@ import { motion } from 'framer-motion'
                       transition={{ duration: 1}}
                       className="w-full lg:w-1/4">
                         <p className="mt-2 mb-2 text-sm text-stone-400">
-                           {experience.loc}
+                           {experience.location}
                         </p>
                     </motion.div>
 

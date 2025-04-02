@@ -60,35 +60,35 @@ export const ABOUT_TEXT = `I am a highly motivated and detail-oriented professio
 
 export const EXPERIENCES = [
   {
-    loc: "Davao City, Philippines",
+    location: "Davao City, Philippines",
     role: "UI/UX Designer | Fullstack Developer",
     company: "SixEleven Global Services and Solutions",
     description: `The Developer of the 611 HR Portal, a comprehensive platform for human resources, combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.`,
     technologies: ["Figma", "Wordpress", "Elementor", "XAMPP"],
   },
   {
-    loc: "Australia (Remote)",
-    role: "Wordpress Developer",
+    location: "Australia (Remote)",
+    role: "Web Developer",
     company: "DCB Digitals",
     description: `Developed and maintained WordPress websites for various clients, ensuring optimal performance and user experience. Collaborated with designers to implement custom themes and plugins, enhancing website functionality and aesthetics.`,
     technologies: ["Wordpress", "Elementor Pro", "Bricks", "Breakdance", "Yoast SEO"],
   },
   {
-    loc: "Panabo City, Philippines",
+    location: "Panabo City, Philippines",
     role: "IT Support Specialist",
     company: "Aces Polytechnic College",
     description: `Provided technical support to students and faculty, troubleshooting hardware and software issues. Managed the school's network infrastructure and ensured data security.`,
     technologies: ["Windows", "Cisco", "MS Offices"],
   },
   {
-    loc: "Panabo City, Philippines",
+    location: "Panabo City, Philippines",
     role: "Graphic Designer| Web Developer | IT Support Specialist",
     company: "Merryl's Consumer Goods Trading",
     description: `Developed a modern and highly efficient website using Vite.js. The project focused on providing a seamless user experience with fast load times and a clean, intuitive design that showcases their products and services effectively.`,
     technologies: ["Vite js", "React", "Windows", "MS Offices", "Photoshop"],
   },
   {
-    loc: "Remote (USA)",
+    location: "Remote (USA)",
     role: "Chat Suppot Agent",
     company: "Whopp Connect",
     description: `Resolved an average of 50+ customer inquiries daily, achieving a 95% first-contact resolution rate. Assisted customers with real-time delivery tracking, reducing escalations by 30%.`,
