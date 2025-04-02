@@ -67,7 +67,7 @@ export const EXPERIENCES = [
     technologies: ["Figma", "Wordpress", "Elementor", "XAMPP"],
   },
   {
-    location: "Australia (Remote)",
+    location: "Queensland, Australia (Remote)",
     role: "Web Developer",
     company: "DCB Digitals",
     description: `Developed and maintained WordPress websites for various clients, ensuring optimal performance and user experience. Collaborated with designers to implement custom themes and plugins, enhancing website functionality and aesthetics.`,
@@ -88,7 +88,7 @@ export const EXPERIENCES = [
     technologies: ["Vite js", "React", "Windows", "MS Offices", "Photoshop"],
   },
   {
-    location: "Remote (USA)",
+    location: "USA (Remote)",
     role: "Chat Suppot Agent",
     company: "Whopp Connect",
     description: `Resolved an average of 50+ customer inquiries daily, achieving a 95% first-contact resolution rate. Assisted customers with real-time delivery tracking, reducing escalations by 30%.`,
