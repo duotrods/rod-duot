@@ -17,8 +17,8 @@ import { motion } from 'framer-motion'
                       initial={{ opacity: 0, x: -100}}
                       transition={{ duration: 1}}
                       className="w-full lg:w-1/4">
-                        <p className="mb-2 text-sm text-stone-400">
-                           
+                        <p className="mt-2 mb-2 text-sm text-stone-400">
+                           {experience.loc}
                         </p>
                     </motion.div>
 
@@ -29,7 +29,8 @@ import { motion } from 'framer-motion'
                       className="w-full max-w-xl lg:w-3/4 mb-6">
                         <h3 className="mb-2 text-xl font-semibold ">
                             {experience.role}
-                            <span className="text-sm font-medium text-stone-400"></span>
+                            <br />
+                            <span className="text-sm font-medium text-stone-400">{experience.company} </span>
                         </h3>
                         <p className="mt-4 mb-6  text-sm text-stone-500">{experience.description}</p>
 

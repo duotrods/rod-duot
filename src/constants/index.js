@@ -60,39 +60,39 @@ export const ABOUT_TEXT = `I am a highly motivated and detail-oriented professio
 
 export const EXPERIENCES = [
   {
-    year: "Nov 2024 - Present",
+    loc: "Davao City, Philippines",
     role: "UI/UX Designer | Fullstack Developer",
     company: "SixEleven Global Services and Solutions",
     description: `The Developer of the 611 HR Portal, a comprehensive platform for human resources, combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.`,
     technologies: ["Figma", "Wordpress", "Elementor", "XAMPP"],
   },
   {
-    year: "Aug -Nov 2024",
+    loc: "Australia (Remote)",
+    role: "Wordpress Developer",
+    company: "DCB Digitals",
+    description: `Developed and maintained WordPress websites for various clients, ensuring optimal performance and user experience. Collaborated with designers to implement custom themes and plugins, enhancing website functionality and aesthetics.`,
+    technologies: ["Wordpress", "Elementor Pro", "Bricks", "Breakdance", "Yoast SEO"],
+  },
+  {
+    loc: "Panabo City, Philippines",
     role: "IT Support Specialist",
     company: "Aces Polytechnic College",
     description: `Provided technical support to students and faculty, troubleshooting hardware and software issues. Managed the school's network infrastructure and ensured data security.`,
     technologies: ["Windows", "Cisco", "MS Offices"],
   },
   {
-    year: "Feb - May 2024",
-    role: "UI/UX Designer | Web Developer | Graphic Designer",
-    company: "Department of Science and Technology - Davao del Norte (Internship)",
-    description: `Led the development of the Customer Satisfaction Feedback System (CSFS) for the Technical Service Division reducing survey processing time by 70%.`,
-    technologies: ["HTML", "Tailwind CSS", "Javascript", "Photoshop", "Figma"],
-  },
-  {
-    year: "2022 - 2024",
-    role: "Chat Suppot Agent (Part-time)",
-    company: "Whopp Connect",
-    description: `Resolved an average of 50+ customer inquiries daily, achieving a 95% first-contact resolution rate. Assisted customers with real-time delivery tracking, reducing escalations by 30%.`,
-    technologies: ["ManyChats", "SalesHub", "Genysys", "TimeDoctor", "Excel"],
-  },
-  {
-    year: "2020 - 2024",
+    loc: "Panabo City, Philippines",
     role: "Graphic Designer| Web Developer | IT Support Specialist",
     company: "Merryl's Consumer Goods Trading",
     description: `Developed a modern and highly efficient website using Vite.js. The project focused on providing a seamless user experience with fast load times and a clean, intuitive design that showcases their products and services effectively.`,
     technologies: ["Vite js", "React", "Windows", "MS Offices", "Photoshop"],
+  },
+  {
+    loc: "Remote (USA)",
+    role: "Chat Suppot Agent",
+    company: "Whopp Connect",
+    description: `Resolved an average of 50+ customer inquiries daily, achieving a 95% first-contact resolution rate. Assisted customers with real-time delivery tracking, reducing escalations by 30%.`,
+    technologies: ["ManyChats", "SalesHub", "Genysys", "TimeDoctor", "Excel"],
   },
 ];
 
