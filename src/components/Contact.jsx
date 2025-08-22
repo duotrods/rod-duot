@@ -169,7 +169,7 @@ const Contact = () => {
             className="bg-white/5 border-[1.5px] border-white/15 backdrop-blur-[1.4px] p-6 rounded-xl shadow-lg text-white transition-all duration-300 hover:shadow-xl"
             whileHover={{ scale: 1 }}
           >
-            <h2 className="text-2xl font-md mb-6">Get In Touch</h2>
+            <h2 className="text-2xl font-md mb-6">Get In Touch test</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label className="block mb-1 text-sm font-regular text-stone-300">
