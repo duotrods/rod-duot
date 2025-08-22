@@ -61,17 +61,24 @@ export const ABOUT_TEXT = `I am a highly motivated and detail-oriented professio
 export const EXPERIENCES = [
   {
     location: "Davao City, Philippines",
-    role: "UI/UX Designer | Fullstack Developer",
+    role: "Web Designer | Wordpress Developer | Virtual Assistant",
     company: "SixEleven Global Services and Solutions",
-    description: `The Developer of the 611 HR Portal, a comprehensive platform for human resources, combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.`,
-    technologies: ["Figma", "Wordpress", "Elementor", "XAMPP"],
+    description: `Developer of the 611 HR Portal, a comprehensive platform for human resources, integrating Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. The system was initially built locally with XAMPP and later deployed to the company’s hosting server, streamlining HR processes and enhancing user experience. In addition to development, provided Virtual Assistant support including scheduling, data entry, email management, and team coordination, ensuring smooth business operations and cross-department efficiency.`,
+    technologies: ["Figma", "Wordpress", "Elementor", "Google Workspace", "Canva"],
+  },
+  {
+    location: "Massachusetts, USA (Remote)",
+    role: "Web Designer | Web Developer",
+    company: "Fblinking",
+    description: `Primarily worked as a Web Designer, creating modern and user-friendly layouts in Figma and implementing responsive designs with Elementor. Occasionally contributed to development tasks in WordPress, while using ClickUp for project management and collaboration.`,
+    technologies: ["Figma", "Wordpress", "Elementor", "ClickUP"],
   },
   {
     location: "Queensland, Australia (Remote)",
     role: "Web Developer",
     company: "DCB Digitals",
     description: `Developed and maintained WordPress websites for various clients, ensuring optimal performance and user experience. Collaborated with designers to implement custom themes and plugins, enhancing website functionality and aesthetics.`,
-    technologies: ["Wordpress", "Elementor Pro", "Bricks", "Breakdance", "Yoast SEO"],
+    technologies: ["Wordpress", "Elementor Pro", "Breakdance", "Yoast SEO", "ClickUp"],
   },
   {
     location: "Panabo City, Philippines",
@@ -92,7 +99,7 @@ export const EXPERIENCES = [
     role: "Chat Suppot Agent",
     company: "Whopp Connect",
     description: `Resolved an average of 50+ customer inquiries daily, achieving a 95% first-contact resolution rate. Assisted customers with real-time delivery tracking, reducing escalations by 30%.`,
-    technologies: ["ManyChats", "SalesHub", "Genysys", "TimeDoctor", "Excel"],
+    technologies: ["ManyChats", "SalesHub", "Genysys", "TimeDoctor", "Google Sheets"],
   },
 ];
 
