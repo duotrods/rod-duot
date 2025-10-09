@@ -15,6 +15,20 @@ import jersey2 from "../assets/projects/jersey2.png";
 import jersey3 from "../assets/projects/jersey3.png";
 import DOSTcerts from "../assets/projects/DOSTCerts.png";
 import DOSTposter from "../assets/projects/DOSTPosters.png";
+import Az from "../assets/projects/A-Z.png";
+import ECCU from "../assets/projects/ECCU.png";
+import fblinking from "../assets/projects/fblinking.png";
+import juniorprodesign from "../assets/projects/juniorprodesign.png";
+import oliverassm from "../assets/projects/oliveirassm.png";
+import oliveiraswebsite from "../assets/projects/oliveiraswebsite.png";
+import oliveirascover from "../assets/projects/oliveriascover.png";
+import proboundmedia from "../assets/projects/proboundmedia.png";
+import rainforest from "../assets/projects/Rainforest.png";
+import rainforestsm from "../assets/projects/rainforestsm.png";
+import remotepharmacy from "../assets/projects/remotepharmacy.png";
+import rrimprovementsm from "../assets/projects/rrimprovementsm.png";
+import scherrersm from "../assets/projects/scherrersm.png";
+import virtualreel from "../assets/projects/Virtualreel.png";
 
 //Brand Logo
 import xd from "../assets/tools/adobe-xd.svg";
@@ -104,6 +118,95 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+   {
+    categories: ["UI/UX Design", "Website Redesign", ],
+    title: "FB Linking",
+    image: fblinking,
+    description:
+      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+    technologies: [
+      { name: "Figma", image: figma },
+    ],
+  },
+   {
+    categories: ["UI/UX Design", "Website Redesign", ],
+    title: "Remote Pharmacy",
+    image: remotepharmacy,
+    description:
+      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+    technologies: [
+      { name: "Figma", image: figma },
+    ],
+  },
+  {
+    categories: ["UI/UX Design", "Website Redesign", ],
+    title: "Virtual Reel",
+    image: virtualreel,
+    description:
+      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+    technologies: [
+      { name: "Figma", image: figma },
+    ],
+  },
+   {
+    categories: ["UI/UX Design", "Web Design", "Web Development"],
+    title: "A-Z Cleaning Services",
+    image: Az,
+    description:
+      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+    technologies: [
+      { name: "Figma", image: figma },
+      { name: "WordPress", image: wordpress },
+      { name: "Elementor", image: elementor },
+     
+    ],
+  },
+   {
+    categories: ["UI/UX Design", "Web Design", "Web Development"],
+    title: "Junior Pro Painting",
+    image: juniorprodesign,
+    description:
+      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+    technologies: [
+      { name: "Figma", image: figma },
+      { name: "WordPress", image: wordpress },
+      { name: "Elementor", image: elementor },
+     
+    ],
+  },
+  {
+    categories: ["UI/UX Design", "Website Redesign", ],
+    title: "Rain Forest",
+    image: rainforest,
+    description:
+      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+    technologies: [
+      { name: "Figma", image: figma },
+       { name: "WordPress", image: wordpress },
+      { name: "Elementor", image: elementor },
+    ],
+  },
+ 
+  {
+    categories: ["UI/UX Design", "Website Redesign", ],
+    title: "Oliveiras Framing Service Website",
+    image: oliveiraswebsite,
+    description:
+      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+    technologies: [
+      { name: "Figma", image: figma },
+    ],
+  },
+  {
+    categories: ["UI/UX Design", "Web Design", ],
+    title: "EC-Council University",
+    image: ECCU,
+    description:
+      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+    technologies: [
+      { name: "Figma", image: figma },
+    ],
+  },
   {
     categories: ["UI/UX Design", "Web Design", "Web Development"],
     title: "SixEleven HR Portal",
@@ -198,6 +301,46 @@ export const PROJECTS = [
     technologies: [{ image: figma }],
   },
   {
+    categories: ["Graphic Design", "Social Media Design"],
+    title: "Oliveiras Services FB Posters",
+    image: oliverassm,
+    description:
+      "I created a series of congratulatory posters for DOST XI, celebrating the accomplishments of their newly appointed Science Research Specialists. The layouts featured a balanced combination of vibrant visuals, clear typography, and cohesive elements that drew attention to the honorees' achievements.",
+    technologies: [{ image: figma }],
+  },
+    {
+    categories: ["Graphic Design", "Social Media Design"],
+    title: "Oliveiras Services Social Media Cover",
+    image: oliveirascover,
+    description:
+      "I created a series of congratulatory posters for DOST XI, celebrating the accomplishments of their newly appointed Science Research Specialists. The layouts featured a balanced combination of vibrant visuals, clear typography, and cohesive elements that drew attention to the honorees' achievements.",
+    technologies: [{ image: figma }],
+  },
+   {
+    categories: ["Graphic Design", "Social Media Design"],
+    title: "Rainforest Google Business Poster",
+    image: rainforestsm,
+    description:
+      "I created a series of congratulatory posters for DOST XI, celebrating the accomplishments of their newly appointed Science Research Specialists. The layouts featured a balanced combination of vibrant visuals, clear typography, and cohesive elements that drew attention to the honorees' achievements.",
+    technologies: [{ image: figma }],
+  },
+  {
+    categories: ["Graphic Design", "Social Media Design"],
+    title: "Rr improvement Google Business Poster",
+    image: rrimprovementsm,
+    description:
+      "I created a series of congratulatory posters for DOST XI, celebrating the accomplishments of their newly appointed Science Research Specialists. The layouts featured a balanced combination of vibrant visuals, clear typography, and cohesive elements that drew attention to the honorees' achievements.",
+    technologies: [{ image: figma }],
+  },
+  {
+    categories: ["Graphic Design", "Social Media Design"],
+    title: "Scherrer Painting Google Business Poster",
+    image: scherrersm,
+    description:
+      "I created a series of congratulatory posters for DOST XI, celebrating the accomplishments of their newly appointed Science Research Specialists. The layouts featured a balanced combination of vibrant visuals, clear typography, and cohesive elements that drew attention to the honorees' achievements.",
+    technologies: [{ image: figma }],
+  },
+  {
     categories: ["Graphic Design", "Jersey Design"],
     title: "Merryl's Yellow Jersey Design",
     image: jersey1,
@@ -237,6 +380,7 @@ export const PROJECTS = [
       "I created a series of congratulatory posters for DOST XI, celebrating the accomplishments of their newly appointed Science Research Specialists. The layouts featured a balanced combination of vibrant visuals, clear typography, and cohesive elements that drew attention to the honorees' achievements.",
     technologies: [{ image: photoshop }],
   },
+  
 ];
 
 export const CONTACT = {
