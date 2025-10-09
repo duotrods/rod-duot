@@ -123,7 +123,7 @@ export const PROJECTS = [
     title: "FB Linking",
     image: fblinking,
     description:
-      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+      "I redesigned the FB Linking landing page in Figma to improve clarity, usability, and visual appeal. The updated design also includes a Portuguese version for bilingual accessibility.",
     technologies: [
       { name: "Figma", image: figma },
     ],
@@ -133,7 +133,7 @@ export const PROJECTS = [
     title: "Remote Pharmacy",
     image: remotepharmacy,
     description:
-      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+      "I redesigned the Remote Pharmacy website in Figma, focusing on a clean, user-friendly interface that simplifies online prescription access and consultation booking. The updated design enhances usability, visual consistency, and overall user experience across devices.",
     technologies: [
       { name: "Figma", image: figma },
     ],
@@ -142,8 +142,8 @@ export const PROJECTS = [
     categories: ["UI/UX Design", "Website Redesign", ],
     title: "Virtual Reel",
     image: virtualreel,
-    description:
-      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+     description:
+      "I designed the Virtual Reel landing page in Figma, creating a bold and immersive interface that showcases its VR video creation features. The design focuses on clarity, engagement, and a smooth user journey across devices.",
     technologies: [
       { name: "Figma", image: figma },
     ],
@@ -152,8 +152,8 @@ export const PROJECTS = [
     categories: ["UI/UX Design", "Web Design", "Web Development"],
     title: "A-Z Cleaning Services",
     image: Az,
-    description:
-      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+     description:
+      "I redesigned and developed the A-Z Cleaning Services website using Figma, WordPress, and Elementor. The new design delivers a cleaner, more modern look with improved navigation and responsive layouts, enhancing user engagement and showcasing the company’s services effectively.",
     technologies: [
       { name: "Figma", image: figma },
       { name: "WordPress", image: wordpress },
@@ -165,8 +165,8 @@ export const PROJECTS = [
     categories: ["UI/UX Design", "Web Design", "Web Development"],
     title: "Junior Pro Painting",
     image: juniorprodesign,
-    description:
-      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+     description:
+      "I redesigned and developed the Junior Pro Painting website using Figma, WordPress, and Elementor. The refreshed design highlights the company’s painting services with a modern, responsive layout and improved user experience to better attract and engage clients.",
     technologies: [
       { name: "Figma", image: figma },
       { name: "WordPress", image: wordpress },
@@ -178,8 +178,8 @@ export const PROJECTS = [
     categories: ["UI/UX Design", "Website Redesign", ],
     title: "Rain Forest",
     image: rainforest,
-    description:
-      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+     description:
+      "I redesigned and developed the Service page and its child pages for the Rain Forest website using Figma, WordPress, and Elementor. The updated design improves layout consistency, readability, and responsiveness while aligning with the site’s overall branding.",
     technologies: [
       { name: "Figma", image: figma },
        { name: "WordPress", image: wordpress },
@@ -191,8 +191,8 @@ export const PROJECTS = [
     categories: ["UI/UX Design", "Website Redesign", ],
     title: "Oliveiras Framing Service Website",
     image: oliveiraswebsite,
-    description:
-      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+     description:
+      "I designed the Oliveiras Framing Service website in Figma, focusing on a clean, modern layout that highlights the company’s craftsmanship and services. The design emphasizes visual balance, easy navigation, and a professional brand presentation.",
     technologies: [
       { name: "Figma", image: figma },
     ],
@@ -201,8 +201,8 @@ export const PROJECTS = [
     categories: ["UI/UX Design", "Web Design", ],
     title: "EC-Council University",
     image: ECCU,
-    description:
-      "I created the 611 HR Portal, a comprehensive platform for human resources, -combining Figma for UI/UX design, WordPress for content management, and Elementor for responsive, visually engaging layouts. Developed locally with XAMPP, the project was smoothly transitioned to the company’s hosting server. This portal optimizes HR processes while delivering a modern and user-friendly experience tailored to the organization’s requirements.",
+     description:
+     "I designed the EC-Council University landing page in Figma, focusing on a professional and modern layout that highlights key academic programs while ensuring clear navigation and strong visual hierarchy.",
     technologies: [
       { name: "Figma", image: figma },
     ],
@@ -304,40 +304,40 @@ export const PROJECTS = [
     categories: ["Graphic Design", "Social Media Design"],
     title: "Oliveiras Services FB Posters",
     image: oliverassm,
-    description:
-      "I created a series of congratulatory posters for DOST XI, celebrating the accomplishments of their newly appointed Science Research Specialists. The layouts featured a balanced combination of vibrant visuals, clear typography, and cohesive elements that drew attention to the honorees' achievements.",
+     description:
+      "I created a series of Facebook posters for Oliveiras Services using Figma, focusing on clean layouts, consistent branding, and engaging visuals to enhance the company’s social media presence.",
     technologies: [{ image: figma }],
   },
     {
     categories: ["Graphic Design", "Social Media Design"],
     title: "Oliveiras Services Social Media Cover",
     image: oliveirascover,
-    description:
-      "I created a series of congratulatory posters for DOST XI, celebrating the accomplishments of their newly appointed Science Research Specialists. The layouts featured a balanced combination of vibrant visuals, clear typography, and cohesive elements that drew attention to the honorees' achievements.",
+     description:
+      "I designed a social media cover for Oliveiras Services using Figma, creating a visually balanced layout that reflects the brand’s identity and enhances its online presence across platforms.",
     technologies: [{ image: figma }],
   },
    {
     categories: ["Graphic Design", "Social Media Design"],
     title: "Rainforest Google Business Poster",
     image: rainforestsm,
-    description:
-      "I created a series of congratulatory posters for DOST XI, celebrating the accomplishments of their newly appointed Science Research Specialists. The layouts featured a balanced combination of vibrant visuals, clear typography, and cohesive elements that drew attention to the honorees' achievements.",
+     description:
+      "I designed a Google Business poster for Rainforest using Figma, focusing on clear branding, strong visuals, and an engaging layout to promote the company’s services effectively online.",
     technologies: [{ image: figma }],
   },
   {
     categories: ["Graphic Design", "Social Media Design"],
     title: "Rr improvement Google Business Poster",
     image: rrimprovementsm,
-    description:
-      "I created a series of congratulatory posters for DOST XI, celebrating the accomplishments of their newly appointed Science Research Specialists. The layouts featured a balanced combination of vibrant visuals, clear typography, and cohesive elements that drew attention to the honorees' achievements.",
+     description:
+      "I designed a Google Business poster for RR Improvement using Figma, featuring clean visuals and cohesive branding to effectively showcase the company’s services and attract potential clients online",
     technologies: [{ image: figma }],
   },
   {
     categories: ["Graphic Design", "Social Media Design"],
     title: "Scherrer Painting Google Business Poster",
     image: scherrersm,
-    description:
-      "I created a series of congratulatory posters for DOST XI, celebrating the accomplishments of their newly appointed Science Research Specialists. The layouts featured a balanced combination of vibrant visuals, clear typography, and cohesive elements that drew attention to the honorees' achievements.",
+     description:
+      "I designed a Google Business poster for Scherrer Painting using Figma, focusing on clean design, cohesive branding, and engaging visuals to highlight the company’s painting services and boost online visibility.",
     technologies: [{ image: figma }],
   },
   {
