@@ -63,7 +63,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="mt-20 border-t border-stone-900 pb-20">
+    <div id="contact" className="mt-20 border-t border-stone-900 pb-20">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}

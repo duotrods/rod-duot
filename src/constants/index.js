@@ -68,12 +68,13 @@ import { MdChatBubble, MdWorkOutline, MdSupportAgent } from "react-icons/md";
 
 
 
-export const HERO_CONTENT = `I’m an experience UI/UX Designer, Graphic Designer, Virtual Assistant, and Mobile App & Web Developer with 4+ years in the field, creating Digital Experiences You Deserve. I am a graduate of Bachelor of Science in Information Technology ind Davao del Norte State College. I have worked with both small and large firms, including Merryl’s Consumer Goods Trading, Scentific, Aces Polytecnic College, and the Department of Science and Technology - Davao del Norte. I am currently working as a Web Designer and Full Stack Developer  at SixEleven Global Services and Solutions. I am also open to part-time opportunities or project-based work.`;
+export const HERO_CONTENT = `I’m an experienced UI/UX Designer, Graphic Designer, Virtual Assistant, and Mobile App & Web Developer with 4+ years in the field, creating Digital Experiences You Deserve. I am a graduate of Bachelor of Science in Information Technology in Davao del Norte State College. I have worked with both small and large firms, including Merryl’s Consumer Goods Trading, Scentific, Aces Polytechnic College, and the Department of Science and Technology - Davao del Norte. I am currently working as a Web Designer and Full Stack Developer at SixEleven Global Services and Solutions. I am also open to part-time opportunities or project-based work.`;
 
 export const ABOUT_TEXT = `I am a highly motivated and detail-oriented professional with a passion for creating innovative and user-friendly digital experiences. I have a strong background in UI/UX design, web development, and graphic design, with a proven track record of delivering high-quality projects that exceed client expectations. I am proficient in a wide range of design and development tools, including Figma, Adobe Creative Suite, and Vite.js, and I am always eager to learn new technologies and expand my skill set. I am committed to delivering exceptional results and providing the best possible experience for my clients and end users.`;
 
 export const EXPERIENCES = [
   {
+    period: "2023 – Present",
     location: "Davao City, Philippines",
     role: "Web Designer | Wordpress Developer | Virtual Assistant",
     company: "SixEleven Global Services and Solutions",
@@ -81,6 +82,7 @@ export const EXPERIENCES = [
     technologies: ["Figma", "Wordpress", "Elementor", "Google Workspace", "Canva"],
   },
   {
+    period: "2024 – Present",
     location: "Massachusetts, USA (Remote)",
     role: "Web Designer | Web Developer",
     company: "Fblinking",
@@ -88,6 +90,7 @@ export const EXPERIENCES = [
     technologies: ["Figma", "Wordpress", "Elementor", "ClickUP"],
   },
   {
+    period: "2024 – Present",
     location: "Queensland, Australia (Remote)",
     role: "Web Developer",
     company: "DCB Digitals",
@@ -95,22 +98,25 @@ export const EXPERIENCES = [
     technologies: ["Wordpress", "Elementor Pro", "Breakdance", "Yoast SEO", "ClickUp"],
   },
   {
+    period: "2022 – 2023",
     location: "Panabo City, Philippines",
     role: "IT Support Specialist",
     company: "Aces Polytechnic College",
-    description: `Provided technical support to students and faculty, troubleshooting hardware and software issues. Managed the school's network infrastructure and ensured data security.`,
+    description: `Provided technical support to students and faculty, troubleshooting hardware and software issues. Managed the school’s network infrastructure and ensured data security.`,
     technologies: ["Windows", "Cisco", "MS Offices"],
   },
   {
+    period: "2022 – 2023",
     location: "Panabo City, Philippines",
-    role: "Graphic Designer| Web Developer | IT Support Specialist",
-    company: "Merryl's Consumer Goods Trading",
+    role: "Graphic Designer | Web Developer | IT Support Specialist",
+    company: "Merryl’s Consumer Goods Trading",
     description: `Developed a modern and highly efficient website using Vite.js. The project focused on providing a seamless user experience with fast load times and a clean, intuitive design that showcases their products and services effectively.`,
     technologies: ["Vite js", "React", "Windows", "MS Offices", "Photoshop"],
   },
   {
+    period: "2021 – 2022",
     location: "USA (Remote)",
-    role: "Chat Suppot Agent",
+    role: "Chat Support Agent",
     company: "Whopp Connect",
     description: `Resolved an average of 50+ customer inquiries daily, achieving a 95% first-contact resolution rate. Assisted customers with real-time delivery tracking, reducing escalations by 30%.`,
     technologies: ["ManyChats", "SalesHub", "Genysys", "TimeDoctor", "Google Sheets"],
@@ -391,123 +397,39 @@ export const CONTACT = {
 
 
 export const TECHNOLOGIES = [
-  {
-    image: figma,
-    delay: 2,
-  },
-  {
-    image: xd,
-    delay: 3,
-  },
-  {
-    image: photoshop,
-    delay: 2.5,
-  },
-  {
-    image: illustrator,
-    delay: 6,
-  },
-  {
-    image: framer,
-    delay: 3.5,
-  },
-  {
-    image: html,
-    delay: 7,
-  },
-  {
-    image: css,
-    delay: 4,
-  },
-  {
-    image: js,
-    delay: 8.5,
-  },
-  {
-    image: typescript,
-    delay: 5.5,
-  },
-  
+  { image: figma,       delay: 2,   name: "Figma" },
+  { image: xd,          delay: 3,   name: "Adobe XD" },
+  { image: photoshop,   delay: 2.5, name: "Photoshop" },
+  { image: illustrator, delay: 6,   name: "Illustrator" },
+  { image: framer,      delay: 3.5, name: "Framer" },
+  { image: html,        delay: 7,   name: "HTML5" },
+  { image: css,         delay: 4,   name: "CSS3" },
+  { image: js,          delay: 8.5, name: "JavaScript" },
+  { image: typescript,  delay: 5.5, name: "TypeScript" },
 ];
 
 export const TECHNOLOGIES2 = [
-  {
-    image: vite,
-    delay: 4,
-  },
-  {
-    image: next,
-    delay: 2,
-  },
-  {
-    image: angular,
-    delay: 3.5,
-  },
-  {
-    image: tailwind,
-    delay: 6,
-  },
-  {
-    image: bootstrap,
-    delay: 5.5,
-  },
-  {
-    image: php,
-    delay: 3,
-  },
-  {
-    image: myadmin,
-    delay: 8,
-  },
-  {
-    image: mysql,
-    delay: 7.5,
-  },
-  {
-    image: firebase,
-    delay: 2,
-  },
-  
+  { image: vite,      delay: 4,   name: "Vite" },
+  { image: next,      delay: 2,   name: "Next.js" },
+  { image: angular,   delay: 3.5, name: "Angular" },
+  { image: tailwind,  delay: 6,   name: "Tailwind" },
+  { image: bootstrap, delay: 5.5, name: "Bootstrap" },
+  { image: php,       delay: 3,   name: "PHP" },
+  { image: myadmin,   delay: 8,   name: "phpMyAdmin" },
+  { image: mysql,     delay: 7.5, name: "MySQL" },
+  { image: firebase,  delay: 2,   name: "Firebase" },
 ];
 
 export const TECHNOLOGIES3 = [
-  {
-    image: react,
-    delay: 1.5,
-  },
-  {
-    image: ionic,
-    delay: 5,
-  },
-  {
-    image:flutter,
-    delay: 4,
-  },
-  {
-    image: wordpress,
-    delay: 2,
-  },
-  {
-    image: elementor,
-    delay: 3.5,
-  },
-  {
-    image: git,
-    delay: 7,
-  },
-  {
-    image: fishbowl,
-    delay: 5.5,
-  },
-  {
-    image: slack,
-    delay: 6.5,
-  },
-  {
-    image: skype,
-    delay: 2.5,
-  },
-
+  { image: react,     delay: 1.5, name: "React" },
+  { image: ionic,     delay: 5,   name: "Ionic" },
+  { image: flutter,   delay: 4,   name: "Flutter" },
+  { image: wordpress, delay: 2,   name: "WordPress" },
+  { image: elementor, delay: 3.5, name: "Elementor" },
+  { image: git,       delay: 7,   name: "Git" },
+  { image: fishbowl,  delay: 5.5, name: "Fishbowl" },
+  { image: slack,     delay: 6.5, name: "Slack" },
+  { image: skype,     delay: 2.5, name: "Skype" },
 ];
 
 

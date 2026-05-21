@@ -1,57 +1,42 @@
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import logo from '../assets/Logo.png'
 import { FaSquareBehance } from 'react-icons/fa6'
 
 const Navbar = () => {
-  return ( 
-    <nav className="flex items-center justify-between py-6">  
+  return (
+    <nav className="flex items-center justify-between py-6">
 
-        {/*Logo*/}
-        <div className="flex flex-shrink-0 items-center">
-            <a href="/" aria-label="Home">
-                <img src={logo} className="mx-2" width={200} height={100} alt="logo"/>
-            </a>
-        </div>
+      {/* Nav links */}
+      <div className="flex items-center gap-6">
+        <a href="/#hero" className="text-sm text-stone-400 hover:text-white transition-colors">About</a>
+        <a href="/#skills" className="text-sm text-stone-400 hover:text-white transition-colors">Skills</a>
+        <a href="/#projects" className="text-sm text-stone-400 hover:text-white transition-colors">Projects</a>
+        <a href="/#work" className="text-sm text-stone-400 hover:text-white transition-colors">Work</a>
+        <a href="/#contact" className="text-sm text-stone-400 hover:text-white transition-colors">Contact</a>
+      </div>
 
-         {/*Navigation 
-            <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
-            <a href="/" className=''>Home</a>
-            <a href="/" className=''>About</a>
-            <a href="/" className=''>Portfolio</a>
-            <a href="/" className=''>Contact Me</a>
-        </div>
-         
-         Links*/}
-         
-
-         {/*Social Medi Links*/}
-        <div className='m-8 flex items-center justify-center gap-4 text-3xl'>
-            <a href="https://www.linkedin.com/in/rod-olinor-du-ot-87a912278/"
-                target='_blank'
-                rel='noopener noreferrer'
-                aria-label='LinkedIn'>
-                    <FaLinkedin />
-            </a>
-            <a href="https://www.behance.net/rodolinorduot"
-                target='_blank'
-                rel='noopener noreferrer'
-                aria-label='Behance'>
-                    <FaSquareBehance />
-            </a>
-            <a href="https://github.com/duotrods"
-                target='_blank'
-                rel='noopener noreferrer'
-                aria-label='Github'>
-                    <FaGithub />
-            </a>
-            <a href="https://www.instagram.com/duotrods_"
-                target='_blank'
-                rel='noopener noreferrer'
-                aria-label='Instagram'>
-                    <FaInstagram/>
-            </a> 
-        </div>
-
+      {/* Social links */}
+      <div className="flex items-center gap-4 text-2xl">
+        <a href="https://www.linkedin.com/in/rod-olinor-du-ot-87a912278/"
+          target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+          className="text-stone-400 hover:text-white transition-colors">
+          <FaLinkedin />
+        </a>
+        <a href="https://www.behance.net/rodolinorduot"
+          target="_blank" rel="noopener noreferrer" aria-label="Behance"
+          className="text-stone-400 hover:text-white transition-colors">
+          <FaSquareBehance />
+        </a>
+        <a href="https://github.com/duotrods"
+          target="_blank" rel="noopener noreferrer" aria-label="Github"
+          className="text-stone-400 hover:text-white transition-colors">
+          <FaGithub />
+        </a>
+        <a href="https://www.instagram.com/duotrods_"
+          target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+          className="text-stone-400 hover:text-white transition-colors">
+          <FaInstagram />
+        </a>
+      </div>
 
     </nav>
   )

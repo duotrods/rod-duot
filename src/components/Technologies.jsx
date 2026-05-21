@@ -60,7 +60,7 @@ const imageVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div className="pb-24">
+    <div id="skills" className="pb-24">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -75,35 +75,18 @@ const Technologies = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center lg:gap-14 sm:gap-14"
+        className="grid grid-cols-3 gap-8 lg:flex lg:flex-wrap lg:items-center lg:justify-center lg:gap-14"
       >
-        {TECHNOLOGIES.map(({ image, delay }, index) => (
+        {TECHNOLOGIES.map(({ image, delay, name }, index) => (
           <motion.div
             key={index}
             initial="initial"
             animate="animate"
             variants={imageVariants(delay)}
+            className="flex flex-col items-center gap-2"
           >
-            <img src={image} alt={`Technology ${index}`} className="w-20 h-20" />
-          </motion.div>
-        ))}
-      </motion.div>
-
-
-      <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1.5 }}
-        className="mt-15 flex flex-wrap items-center justify-center lg:gap-10 sm:gap-14"
-      >
-        {TECHNOLOGIES2.map(({ image, delay }, index) => (
-          <motion.div
-            key={index}
-            initial="initial"
-            animate="animate"
-            variants={imageVariants(delay)}
-          >
-            <img src={image} alt={`Technology ${index}`} className="w-20 h-20" />
+            <img src={image} alt={name} className="w-20 h-20" />
+            <p className="text-xs text-stone-400">{name}</p>
           </motion.div>
         ))}
       </motion.div>
@@ -112,16 +95,38 @@ const Technologies = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="mt-15 flex flex-wrap items-center justify-center lg:gap-14 sm:gap-14 "
+        className="mt-12 grid grid-cols-3 gap-8 lg:flex lg:flex-wrap lg:items-center lg:justify-center lg:gap-10"
       >
-        {TECHNOLOGIES3.map(({ image, delay }, index) => (
+        {TECHNOLOGIES2.map(({ image, delay, name }, index) => (
           <motion.div
             key={index}
             initial="initial"
             animate="animate"
             variants={imageVariants(delay)}
+            className="flex flex-col items-center gap-2"
           >
-            <img src={image} alt={`Technology ${index}`} className="w-20 h-20 fill-blue-500" />
+            <img src={image} alt={name} className="w-20 h-20" />
+            <p className="text-xs text-stone-400">{name}</p>
+          </motion.div>
+        ))}
+      </motion.div>
+
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        className="mt-12 grid grid-cols-3 gap-8 lg:flex lg:flex-wrap lg:items-center lg:justify-center lg:gap-14"
+      >
+        {TECHNOLOGIES3.map(({ image, delay, name }, index) => (
+          <motion.div
+            key={index}
+            initial="initial"
+            animate="animate"
+            variants={imageVariants(delay)}
+            className="flex flex-col items-center gap-2"
+          >
+            <img src={image} alt={name} className="w-20 h-20" />
+            <p className="text-xs text-stone-400">{name}</p>
           </motion.div>
         ))}
       </motion.div>

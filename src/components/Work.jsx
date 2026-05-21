@@ -3,44 +3,45 @@ import { motion } from 'framer-motion'
 
   const Work = () => {
    return (
-     <div className="pb-4">
+     <div id="work" className="pb-4">
         <motion.h2 whileInView={{ opacity: 1, y: 0}}
              initial={{ opacity: 0, y: -100}}
-             transition={{ duration: 0.5}}  
-             className="my-20 text-center text-4xl"> Work Experience
+             transition={{ duration: 0.5}}
+             className="my-20 text-center text-4xl">Work Experience
         </motion.h2>
         <div>
             {EXPERIENCES.map((experience, index) => (
                  <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                    <motion.div 
+                    <motion.div
                       whileInView={{ opacity: 1, x: 0}}
                       initial={{ opacity: 0, x: -100}}
                       transition={{ duration: 1}}
                       className="w-full lg:w-1/4">
-                        <p className="mt-2 mb-2 text-sm text-stone-400">
+                        <p className="mt-2 mb-1 text-xs font-medium text-blue-400">
+                           {experience.period}
+                        </p>
+                        <p className="mb-2 text-sm text-stone-400">
                            {experience.location}
                         </p>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                       whileInView={{ opacity: 1, x: 0}}
                       initial={{ opacity: 0, x: -100}}
                       transition={{ duration: 1}}
                       className="w-full max-w-xl lg:w-3/4 mb-6">
-                        <h3 className="mb-2 text-xl font-semibold ">
+                        <h3 className="mb-2 text-xl font-semibold">
                             {experience.role}
                             <br />
-                            <span className="text-sm font-medium text-stone-400">{experience.company} </span>
+                            <span className="text-sm font-medium text-stone-400">{experience.company}</span>
                         </h3>
-                        <p className="mt-4 mb-6  text-sm text-stone-500">{experience.description}</p>
+                        <p className="mt-4 mb-6 text-sm text-stone-500">{experience.description}</p>
 
-                        {experience.technologies.map((tech, index) => (
-                        <span key={index} className="mr-2 bg-[#036BFF] p-2 pl-4 pr-4 text-xs rounded-full font-medium text-stone-300">{tech}</span>
+                        {experience.technologies.map((tech, i) => (
+                        <span key={i} className="mr-2 bg-[#036BFF] p-2 pl-4 pr-4 text-xs rounded-full font-medium text-stone-300">{tech}</span>
                         ))}
                     </motion.div>
-
-
-                 </div> 
+                 </div>
             ))}
         </div>
      </div>
