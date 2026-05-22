@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { PROJECTS } from "../constants";
 import Navbar from "../components/Navbar";
@@ -42,6 +42,7 @@ const cardVariants = {
 
 const ProjectsPage = () => {
   const [activeTab, setActiveTab] = useState("All");
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -129,7 +130,8 @@ const ProjectsPage = () => {
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                className="bg-white/5 border border-white/15 backdrop-blur-[1.4px] rounded-xl overflow-hidden flex flex-col"
+                onClick={() => navigate(`/projects/${project.slug}`)}
+                className="bg-white/5 border border-white/15 backdrop-blur-[1.4px] rounded-xl overflow-hidden flex flex-col cursor-pointer hover:border-white/30 transition-colors"
               >
                 <img
                   src={project.image}
@@ -173,6 +175,7 @@ const ProjectsPage = () => {
             ))}
           </motion.div>
         </AnimatePresence>
+
       </div>
     </div>
   );

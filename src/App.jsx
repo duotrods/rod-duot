@@ -7,6 +7,7 @@ import Services from "./components/Services"
 import Contact from "./components/Contact"
 import Navbar from "./components/Navbar"
 import ProjectsPage from "./pages/ProjectsPage"
+import CaseStudyPage from "./pages/CaseStudyPage"
 
 const Background = () => (
   <div className="fixed inset-0 -z-10">
@@ -35,6 +36,7 @@ const App = () => (
   <Routes>
     <Route path="/" element={<HomePage />} />
     <Route path="/projects" element={<ProjectsPage />} />
+    <Route path="/projects/:slug" element={<CaseStudyPage />} />
   </Routes>
 )
 

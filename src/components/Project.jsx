@@ -1,10 +1,12 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const RECENT_PROJECTS = PROJECTS.slice(0, 5);
 
 const Project = () => {
+  const navigate = useNavigate();
+
   return (
     <div id="projects" className="pb-4">
       <motion.h2
@@ -19,7 +21,8 @@ const Project = () => {
         {RECENT_PROJECTS.map((project, index) => (
           <div
             key={index}
-            className={`mb-8 flex flex-wrap lg:justify-center gap-24 lg:items-center ${
+            onClick={() => navigate(`/projects/${project.slug}`)}
+            className={`mb-8 flex flex-wrap lg:justify-center gap-24 lg:items-center cursor-pointer ${
               index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
             }`}
           >
@@ -67,6 +70,7 @@ const Project = () => {
       <div className="flex justify-center mt-12 mb-8">
         <Link
           to="/projects"
+          onClick={(e) => e.stopPropagation()}
           className="bg-blue-600 rounded-full px-8 py-3 text-sm font-medium hover:bg-blue-700 transition-colors"
         >
           Browse All Projects →
