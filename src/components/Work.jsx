@@ -1,5 +1,6 @@
 import { EXPERIENCES } from "../constants"
-import { motion } from 'framer-motion' 
+import { motion } from 'framer-motion'
+import { FaCalendarAlt, FaBriefcase, FaMapMarkerAlt } from "react-icons/fa"
 
   const Work = () => {
    return (
@@ -16,13 +17,25 @@ import { motion } from 'framer-motion'
                       whileInView={{ opacity: 1, x: 0}}
                       initial={{ opacity: 0, x: -100}}
                       transition={{ duration: 1}}
-                      className="w-full lg:w-1/4">
-                        <p className="mt-2 mb-1 text-xs font-medium text-blue-400">
-                           {experience.period}
-                        </p>
-                        <p className="mb-2 text-sm text-stone-400">
-                           {experience.location}
-                        </p>
+                      className="w-full lg:w-1/4 mb-4 lg:mb-0">
+                      <div className="pl-4 space-y-3">
+                        <div className="flex items-center gap-2">
+                          <FaCalendarAlt className="text-blue-400 text-xs shrink-0" />
+                          <p className="text-sm font-semibold text-white tracking-wide">
+                            {experience.period}
+                          </p>
+                        </div>
+                        {experience.employment && (
+                          <div className="flex items-center gap-2">
+                            <FaBriefcase className="text-stone-500 text-xs shrink-0" />
+                            <p className="text-xs text-stone-400">{experience.employment}</p>
+                          </div>
+                        )}
+                        <div className="flex items-center gap-2">
+                          <FaMapMarkerAlt className="text-stone-500 text-xs shrink-0" />
+                          <p className="text-xs text-stone-400">{experience.location}</p>
+                        </div>
+                      </div>
                     </motion.div>
 
                     <motion.div
@@ -35,7 +48,7 @@ import { motion } from 'framer-motion'
                             <br />
                             <span className="text-sm font-medium text-stone-400">{experience.company}</span>
                         </h3>
-                        <p className="mt-4 mb-6 text-sm text-stone-500">{experience.description}</p>
+                        <p className="mt-2 mb-6 text-sm text-stone-500">{experience.description}</p>
 
                         {experience.technologies.map((tech, i) => (
                         <span key={i} className="mr-2 bg-[#036BFF] p-2 pl-4 pr-4 text-xs rounded-full font-medium text-stone-300">{tech}</span>
