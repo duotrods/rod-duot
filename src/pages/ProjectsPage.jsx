@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { PROJECTS } from "../constants";
-import Navbar from "../components/Navbar";
 
 const TABS = [
   { label: "All", match: () => true },
@@ -52,19 +51,10 @@ const ProjectsPage = () => {
   const filtered = PROJECTS.filter((p) => activeMatch(p.categories));
 
   return (
-    <div className="overflow-x-hidden text-stone-300 antialiased min-h-screen">
-      {/* Background */}
-      <div className="fixed inset-0 -z-10">
-        <div className="relative h-full w-full bg-slate-950">
-          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
-        </div>
-      </div>
-
-      <div className="container mx-auto px-8">
-        <Navbar />
-
+    <div className="text-stone-300 antialiased min-h-screen">
+      <div className="container mx-auto px-8 pt-8 lg:pt-16">
         {/* Page header */}
-        <div className="flex items-center justify-between mt-4 mb-10">
+        <div className="flex items-center justify-between mb-10">
           <Link
             to="/"
             className="text-sm text-stone-400 hover:text-white transition-colors flex items-center gap-2"
