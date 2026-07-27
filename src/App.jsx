@@ -1,27 +1,29 @@
-import { Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Hero from "./components/Hero"
 import Technologies from "./components/Technologies"
 import Project from "./components/Project"
 import Work from "./components/Work"
 import Services from "./components/Services"
 import Contact from "./components/Contact"
-import Navbar from "./components/Navbar"
+import AppShell from "./components/shell/AppShell"
 import ProjectsPage from "./pages/ProjectsPage"
 import CaseStudyPage from "./pages/CaseStudyPage"
 
-const Background = () => (
-  <div className="fixed inset-0 -z-10">
-    <div className="relative h-full w-full bg-slate-950">
-      <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
-    </div>
-  </div>
-)
+const HomePage = () => {
+  const location = useLocation()
 
-const HomePage = () => (
-  <div className="overflow-x-hidden text-stone-300 antialiased">
-    <Background />
+  useEffect(() => {
+    if (!location.hash) return
+    const id = location.hash.slice(1)
+    const frame = requestAnimationFrame(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+    })
+    return () => cancelAnimationFrame(frame)
+  }, [location.hash])
+
+  return (
     <div className="container mx-auto px-8">
-      <Navbar />
       <Hero />
       <Technologies />
       <Project />
@@ -29,15 +31,17 @@ const HomePage = () => (
       <Services />
       <Contact />
     </div>
-  </div>
-)
+  )
+}
 
 const App = () => (
-  <Routes>
-    <Route path="/" element={<HomePage />} />
-    <Route path="/projects" element={<ProjectsPage />} />
-    <Route path="/projects/:slug" element={<CaseStudyPage />} />
-  </Routes>
+  <AppShell>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/projects" element={<ProjectsPage />} />
+      <Route path="/projects/:slug" element={<CaseStudyPage />} />
+    </Routes>
+  </AppShell>
 )
 
 export default App
