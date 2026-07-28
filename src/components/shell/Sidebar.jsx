@@ -4,6 +4,7 @@ import { FiUser, FiTool, FiFolder, FiBriefcase, FiMail } from "react-icons/fi"
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { FaSquareBehance } from "react-icons/fa6"
 import profilePic from "../../assets/rodprofile.png"
+import logo from "../../assets/Logowhite.svg"
 
 const NAV_ITEMS = [
   { id: "hero", label: "About", icon: FiUser },
@@ -65,6 +66,11 @@ const Sidebar = ({ onNavigate }) => {
 
   return (
     <div className="flex h-full flex-col bg-white/5 border-r border-white/10 backdrop-blur-[1.4px] px-6 py-8">
+      {/* Logo */}
+      <a href="/" aria-label="Home" className="flex items-center mb-6">
+        <img src={logo} className="h-8 w-auto" alt="logo" />
+      </a>
+
       {/* Identity badge */}
       <div className="flex items-center gap-3 mb-10">
         <img
