@@ -82,9 +82,9 @@ const Sidebar = ({ onNavigate }) => {
               key={item.id}
               href={isProjects ? "/projects" : `/#${item.id}`}
               onClick={isProjects ? handleProjectsClick : handleSectionClick(item)}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm transition-colors border-l-2 ${
+              className={`flex items-center gap-3 px-4 py-3 rounded-r-md text-sm transition-colors border-l-[3px] ${
                 isActive
-                  ? "bg-white/10 border-blue-500 text-white"
+                  ? "bg-blue-500/10 border-blue-500 text-white"
                   : "border-transparent text-stone-400 hover:text-white hover:bg-white/5"
               }`}
             >
