@@ -3,7 +3,6 @@ import { useLocation, useNavigate } from "react-router-dom"
 import { FiUser, FiTool, FiFolder, FiBriefcase, FiMail } from "react-icons/fi"
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { FaSquareBehance } from "react-icons/fa6"
-import profilePic from "../../assets/rodprofile.png"
 import logo from "../../assets/Logowhite.svg"
 
 const NAV_ITEMS = [
@@ -67,22 +66,9 @@ const Sidebar = ({ onNavigate }) => {
   return (
     <div className="flex h-full flex-col bg-white/5 border-r border-white/10 backdrop-blur-[1.4px] px-6 py-8">
       {/* Logo */}
-      <a href="/" aria-label="Home" className="flex items-center mb-6">
+      <a href="/" aria-label="Home" className="flex items-center mb-10">
         <img src={logo} className="h-8 w-auto" alt="logo" />
       </a>
-
-      {/* Identity badge */}
-      <div className="flex items-center gap-3 mb-10">
-        <img
-          src={profilePic}
-          alt="Rod Du-ot"
-          className="w-12 h-12 rounded-full object-cover border border-white/15"
-        />
-        <div>
-          <p className="text-stone-100 font-semibold leading-tight">Rod Du-ot</p>
-          <p className="text-xs text-stone-400">Web Developer · UI/UX Designer</p>
-        </div>
-      </div>
 
       {/* Nav */}
       <nav className="flex flex-col gap-1">
