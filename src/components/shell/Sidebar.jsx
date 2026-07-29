@@ -1,16 +1,15 @@
-import { useEffect, useState } from "react"
 import { useLocation, useNavigate } from "react-router-dom"
-import { FiUser, FiTool, FiFolder, FiBriefcase, FiMail } from "react-icons/fi"
+import { FiUser, FiTool, FiFolder, FiBriefcase, FiAward, FiMail } from "react-icons/fi"
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { FaSquareBehance } from "react-icons/fa6"
 import logo from "../../assets/Logowhite.svg"
 
 const NAV_ITEMS = [
-  { id: "hero", label: "About", icon: FiUser },
-  { id: "skills", label: "Skills", icon: FiTool },
-  { id: "projects", label: "Projects", icon: FiFolder },
-  { id: "work", label: "Work", icon: FiBriefcase },
-  { id: "contact", label: "Contact", icon: FiMail },
+  { label: "Home", icon: FiUser, path: "/" },
+  { label: "Skills", icon: FiTool, path: "/skills" },
+  { label: "Projects", icon: FiFolder, path: "/projects" },
+  { label: "Experience", icon: FiBriefcase, path: "/experience" },
+  { label: "Certification", icon: FiAward, path: "/certifications" },
 ]
 
 const SOCIAL_LINKS = [
@@ -23,69 +22,39 @@ const SOCIAL_LINKS = [
 const Sidebar = ({ onNavigate }) => {
   const location = useLocation()
   const navigate = useNavigate()
-  const [activeId, setActiveId] = useState("hero")
-  const isProjectsRoute = location.pathname.startsWith("/projects")
 
-  useEffect(() => {
-    if (location.pathname !== "/") return
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries.filter((entry) => entry.isIntersecting)
-        if (visible.length > 0) {
-          setActiveId(visible[0].target.id)
-        }
-      },
-      { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
-    )
-
-    NAV_ITEMS.forEach(({ id }) => {
-      const el = document.getElementById(id)
-      if (el) observer.observe(el)
-    })
-
-    return () => observer.disconnect()
-  }, [location.pathname])
-
-  const handleSectionClick = (item) => (e) => {
+  const handleNavClick = (item) => (e) => {
     e.preventDefault()
-    if (location.pathname === "/") {
-      document.getElementById(item.id)?.scrollIntoView({ behavior: "smooth" })
-    } else {
-      navigate(`/#${item.id}`)
-    }
-    onNavigate?.()
-  }
-
-  const handleProjectsClick = (e) => {
-    e.preventDefault()
-    navigate("/projects")
+    navigate(item.path)
     onNavigate?.()
   }
 
   return (
     <div className="flex h-full flex-col bg-white/5 border-r border-white/10 backdrop-blur-[1.4px] px-6 py-8">
       {/* Logo */}
-      <a href="/" aria-label="Home" className="flex items-center mb-10">
-        <img src={logo} className="h-8 w-auto" alt="logo" />
+      <a href="/" aria-label="Home" className="flex items-center gap-3 mb-10">
+        <img src={logo} className="h-10 w-auto" alt="logo" />
+        <span className="text-xl font-semibold uppercase tracking-wide text-stone-100">Rod Javinz</span>
       </a>
 
       {/* Nav */}
       <nav className="flex flex-col gap-1">
         {NAV_ITEMS.map((item) => {
           const Icon = item.icon
-          const isProjects = item.id === "projects"
-          const isActive = isProjects ? isProjectsRoute : !isProjectsRoute && activeId === item.id
+          const isActive =
+            item.path === "/"
+              ? location.pathname === "/"
+              : location.pathname.startsWith(item.path)
 
           return (
             <a
-              key={item.id}
-              href={isProjects ? "/projects" : `/#${item.id}`}
-              onClick={isProjects ? handleProjectsClick : handleSectionClick(item)}
-              className={`flex items-center gap-3 px-4 py-3 rounded-r-md text-sm transition-colors border-l-[3px] ${
+              key={item.path}
+              href={item.path}
+              onClick={handleNavClick(item)}
+              className={`flex items-center gap-3 px-4 py-3 rounded-md text-sm transition-colors ${
                 isActive
-                  ? "bg-blue-500/10 border-blue-500 text-white"
-                  : "border-transparent text-stone-400 hover:text-white hover:bg-white/5"
+                  ? "bg-blue-500/10 text-white"
+                  : "text-stone-400 hover:text-white hover:bg-white/5"
               }`}
             >
               <Icon size={16} />
@@ -95,20 +64,37 @@ const Sidebar = ({ onNavigate }) => {
         })}
       </nav>
 
+      {/* Contact prompt */}
+      <div className="mt-auto pt-8 border-t border-white/10">
+        <p className="text-xs text-stone-400 leading-relaxed">
+          For work, collabs & everything else, reach me at
+        </p>
+        <a
+          href="mailto:duotrodolinor@gmail.com"
+          className="mt-2 flex items-center gap-2 text-sm text-stone-200 hover:text-white transition-colors"
+        >
+          <FiMail size={14} />
+          duotrodolinor@gmail.com
+        </a>
+      </div>
+
       {/* Socials */}
-      <div className="mt-auto flex items-center gap-4 pt-8 text-xl">
-        {SOCIAL_LINKS.map(({ href, label, Icon }) => (
-          <a
-            key={label}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={label}
-            className="text-stone-400 hover:text-white transition-colors"
-          >
-            <Icon />
-          </a>
-        ))}
+      <div className="pt-6 mt-6 border-t border-white/10">
+        <p className="text-xs text-stone-400 mb-3">Socials</p>
+        <div className="flex items-center gap-4 text-xl">
+          {SOCIAL_LINKS.map(({ href, label, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              className="text-stone-400 hover:text-white transition-colors"
+            >
+              <Icon />
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   )

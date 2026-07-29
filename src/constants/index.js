@@ -68,7 +68,15 @@ import { MdChatBubble, MdWorkOutline, MdSupportAgent } from "react-icons/md";
 
 
 
-export const HERO_CONTENT = `I’m an experienced UI/UX Designer, Graphic Designer, Virtual Assistant, and Mobile App & Web Developer with 4+ years in the field, creating Digital Experiences You Deserve. I am a graduate of Bachelor of Science in Information Technology in Davao del Norte State College. I have worked with both small and large firms, including Merryl’s Consumer Goods Trading, Scentific, Aces Polytechnic College, and the Department of Science and Technology - Davao del Norte. I am currently working as a Web Designer and Full Stack Developer at SixEleven Global Services and Solutions. I am also open to part-time opportunities or project-based work.`;
+export const HERO_CONTENT = `Graduated in 2024 with a Bachelor of Science in Information Technology from Davao del Norte State College, I currently work as a Software Developer at Chellan Highway Safety Services Ltd. My role builds on prior experience in web development, UI design, and programming, leveraging skills in full-stack development, Firebase, and Node.js to contribute to impactful digital solutions.  
+
+
+
+At Fblinking, I create UI designs using Figma and implement them through WordPress and Elementor. Previous roles include developing the DOST Customer Satisfaction Feedback System at the Department of Science and Technology, which received recognition for innovation. 
+
+
+
+My goal is to continue advancing in the technology field while contributing to meaningful projects.`;
 
 export const ABOUT_TEXT = `I am a highly motivated and detail-oriented professional with a passion for creating innovative and user-friendly digital experiences. I have a strong background in UI/UX design, web development, and graphic design, with a proven track record of delivering high-quality projects that exceed client expectations. I am proficient in a wide range of design and development tools, including Figma, Adobe Creative Suite, and Vite.js, and I am always eager to learn new technologies and expand my skill set. I am committed to delivering exceptional results and providing the best possible experience for my clients and end users.`;
 
@@ -541,46 +549,90 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Davao City, Philippines", 
+  address: "Davao City, Philippines",
   phoneNo: "+63 9518 4413 42 ",
   email: "duotrodolinor@gmail.com",
 };
 
+export const CERTIFICATIONS = [
+  {
+    title: "Cybersecurity Essentials",
+    issuer: "Cisco Networking Academy",
+    date: "Dec 16, 2023",
+    category: "Cybersecurity",
+    url: "https://www.credly.com/badges/d140deff-4808-4e59-86e7-cf9b4e2b2ab3",
+  },
+  {
+    title: "Introduction to Cybersecurity",
+    issuer: "Cisco Networking Academy",
+    date: "May 15, 2023",
+    category: "Cybersecurity",
+    url: "https://www.credly.com/badges/893e6297-3452-44f7-98ef-f461c2591b18",
+  },
+  {
+    title: "Introduction to Networks",
+    issuer: "Cisco Networking Academy",
+    date: "Jul 06, 2023",
+    category: "Cybersecurity",
+    url: "https://www.credly.com/badges/b538c5fd-883a-4d2f-87e2-159af5ea8cc2",
+  },
+];
+
 
 export const TECHNOLOGIES = [
-  { image: figma,       delay: 2,   name: "Figma" },
-  { image: xd,          delay: 3,   name: "Adobe XD" },
-  { image: photoshop,   delay: 2.5, name: "Photoshop" },
-  { image: illustrator, delay: 6,   name: "Illustrator" },
-  { image: framer,      delay: 3.5, name: "Framer" },
-  { image: html,        delay: 7,   name: "HTML5" },
-  { image: css,         delay: 4,   name: "CSS3" },
-  { image: js,          delay: 8.5, name: "JavaScript" },
-  { image: typescript,  delay: 5.5, name: "TypeScript" },
+  { image: figma,       delay: 2,   name: "Figma",       category: "Design" },
+  { image: xd,          delay: 3,   name: "Adobe XD",    category: "Design" },
+  { image: photoshop,   delay: 2.5, name: "Photoshop",   category: "Design" },
+  { image: illustrator, delay: 6,   name: "Illustrator", category: "Design" },
+  { image: framer,      delay: 3.5, name: "Framer",      category: "Design" },
+  { image: html,        delay: 7,   name: "HTML5",       category: "Frontend" },
+  { image: css,         delay: 4,   name: "CSS3",        category: "Frontend" },
+  { image: js,          delay: 8.5, name: "JavaScript",  category: "Frontend" },
+  { image: typescript,  delay: 5.5, name: "TypeScript",  category: "Frontend" },
 ];
 
 export const TECHNOLOGIES2 = [
-  { image: vite,      delay: 4,   name: "Vite" },
-  { image: next,      delay: 2,   name: "Next.js" },
-  { image: angular,   delay: 3.5, name: "Angular" },
-  { image: tailwind,  delay: 6,   name: "Tailwind" },
-  { image: bootstrap, delay: 5.5, name: "Bootstrap" },
-  { image: php,       delay: 3,   name: "PHP" },
-  { image: myadmin,   delay: 8,   name: "phpMyAdmin" },
-  { image: mysql,     delay: 7.5, name: "MySQL" },
-  { image: firebase,  delay: 2,   name: "Firebase" },
+  { image: vite,      delay: 4,   name: "Vite",       category: "Frontend" },
+  { image: next,      delay: 2,   name: "Next.js",    category: "Frontend" },
+  { image: angular,   delay: 3.5, name: "Angular",    category: "Frontend" },
+  { image: tailwind,  delay: 6,   name: "Tailwind",   category: "Frontend" },
+  { image: bootstrap, delay: 5.5, name: "Bootstrap",  category: "Frontend" },
+  { image: php,       delay: 3,   name: "PHP",        category: "Backend & Database" },
+  { image: myadmin,   delay: 8,   name: "phpMyAdmin", category: "Backend & Database" },
+  { image: mysql,     delay: 7.5, name: "MySQL",      category: "Backend & Database" },
+  { image: firebase,  delay: 2,   name: "Firebase",   category: "Backend & Database" },
 ];
 
 export const TECHNOLOGIES3 = [
-  { image: react,     delay: 1.5, name: "React" },
-  { image: ionic,     delay: 5,   name: "Ionic" },
-  { image: flutter,   delay: 4,   name: "Flutter" },
-  { image: wordpress, delay: 2,   name: "WordPress" },
-  { image: elementor, delay: 3.5, name: "Elementor" },
-  { image: git,       delay: 7,   name: "Git" },
-  { image: fishbowl,  delay: 5.5, name: "Fishbowl" },
-  { image: slack,     delay: 6.5, name: "Slack" },
-  { image: skype,     delay: 2.5, name: "Skype" },
+  { image: react,     delay: 1.5, name: "React",     category: "Frontend" },
+  { image: ionic,     delay: 5,   name: "Ionic",     category: "Frontend" },
+  { image: flutter,   delay: 4,   name: "Flutter",   category: "Frontend" },
+  { image: wordpress, delay: 2,   name: "WordPress", category: "CMS & No-Code" },
+  { image: elementor, delay: 3.5, name: "Elementor", category: "CMS & No-Code" },
+  { image: git,       delay: 7,   name: "Git",       category: "Developer Tools" },
+  { image: fishbowl,  delay: 5.5, name: "Fishbowl",  category: "Developer Tools" },
+  { image: slack,     delay: 6.5, name: "Slack",     category: "Developer Tools" },
+  { image: skype,     delay: 2.5, name: "Skype",     category: "Developer Tools" },
+];
+
+// Skills without an icon asset yet — shown as text-only placeholders on the
+// dedicated Skills page until a logo is added.
+export const EXTRA_SKILLS = [
+  { name: "Supabase",    delay: 3,   category: "Backend & Database" },
+  { name: "Node.js",     delay: 5,   category: "Backend & Database" },
+  { name: "Daisy UI",    delay: 7,   category: "Frontend" },
+  { name: "Cloudflare",  delay: 2,   category: "DevOps & Cloud" },
+  { name: "n8n",         delay: 3,   category: "CMS & No-Code" },
+  { name: "GoHighLevel", delay: 4.5, category: "CMS & No-Code" },
+  { name: "Claude",      delay: 2.5, category: "AI & Machine Learning" },
+  { name: "Claude Code", delay: 4,   category: "AI & Machine Learning" },
+  { name: "Codex",       delay: 5,   category: "AI & Machine Learning" },
+  { name: "ChatGPT",     delay: 3.5, category: "AI & Machine Learning" },
+  { name: "Antigravity", delay: 6,   category: "AI & Machine Learning" },
+  { name: "GitHub",      delay: 2,   category: "Developer Tools" },
+  { name: "VS Code",     delay: 3,   category: "Developer Tools" },
+  { name: "Discord",     delay: 4.5, category: "Developer Tools" },
+  { name: "ClickUp",     delay: 5.5, category: "Developer Tools" },
 ];
 
 

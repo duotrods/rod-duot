@@ -52,7 +52,7 @@ const ProjectsPage = () => {
 
   return (
     <div className="text-stone-300 antialiased min-h-screen">
-      <div className="container mx-auto px-8 pt-8 lg:pt-16">
+      <div className="container mx-auto px-8 lg:px-24 pt-8 lg:pt-16">
         {/* Page header */}
         <div className="flex items-center justify-between mb-10">
           <Link
@@ -126,7 +126,7 @@ const ProjectsPage = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-90 object-fill"
                 />
                 <div className="p-5 flex flex-col flex-1">
                   <h3 className="font-semibold text-lg mb-2 text-stone-100">{project.title}</h3>
