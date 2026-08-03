@@ -241,11 +241,13 @@ export const Project = () => {
             >
               <h3 className="mb-2 font-semibold text-2xl">{project.title}</h3>
               <p className="mb-6 text-stone-400 text-sm">{project.description}</p>
-              {project.categories.map((category, i) => (
-                <span key={i} className="mr-2 bg-[#036BFF] p-2 pl-4 pr-4 text-xs font-medium rounded-full">
-                  {category}
-                </span>
-              ))}
+              <div className="flex flex-wrap gap-2">
+                {project.categories.map((category, i) => (
+                  <span key={i} className="whitespace-nowrap bg-[#036BFF] px-4 py-2 text-xs font-medium rounded-full">
+                    {category}
+                  </span>
+                ))}
+              </div>
               <p className="mt-8 mb-2 font-semibold text-xs">Tools I used:</p>
               <div className="flex gap-4">
                 {project.technologies.map((tech, i) => (
@@ -299,11 +301,11 @@ export const Work = () => {
         {preview.map((experience, index) => (
           <div
             key={index}
-            className="flex items-center gap-6 px-10 py-8 border-b border-white/10 last:border-b-0 hover:bg-white/5 transition-colors"
+            className="flex flex-col gap-1 px-4 py-8 sm:flex-row sm:items-center sm:gap-6 sm:px-10 border-b border-white/10 last:border-b-0 hover:bg-white/5 transition-colors"
           >
-            <span className="text-sm text-stone-500 w-14 shrink-0">{getYear(experience.period)}</span>
-            <span className="font-semibold text-stone-100 flex-1">{experience.role}</span>
-            <span className="text-sm text-stone-400 text-right shrink-0">{experience.company}</span>
+            <span className="text-sm text-stone-500 sm:w-14 sm:shrink-0">{getYear(experience.period)}</span>
+            <span className="font-semibold text-stone-100 sm:flex-1">{experience.role}</span>
+            <span className="text-sm text-stone-400 sm:text-right sm:shrink-0">{experience.company}</span>
           </div>
         ))}
       </motion.div>
