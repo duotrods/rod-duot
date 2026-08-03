@@ -30,6 +30,10 @@ import rrimprovementsm from "../assets/projects/rrimprovementsm.png";
 import scherrersm from "../assets/projects/scherrersm.png";
 import virtualreel from "../assets/projects/Virtualreel.png";
 
+//Issuer Logos
+import cisco from "../assets/issuers/cisco.svg";
+import coursera from "../assets/issuers/coursera.svg";
+
 //Brand Logo
 import xd from "../assets/tools/adobe-xd.svg";
 import angular from "../assets/tools/angular.svg";
@@ -61,6 +65,23 @@ import typescript from "../assets/tools/typescript.svg";
 import vite from "../assets/tools/vite.svg";
 import wordpress from "../assets/tools/wordpress.svg";
 import xampp from "../assets/tools/xampp.svg";
+import supabase from "../assets/tools/supabase-logo-icon.svg";
+import nodejs from "../assets/tools/nodejs.svg";
+import n8n from "../assets/tools/n8n.svg";
+import ghl from "../assets/tools/ghl.jpg";
+import github from "../assets/tools/github.svg";
+import vscode from "../assets/tools/vscode.svg";
+import discord from "../assets/tools/discord.svg";
+import clickup from "../assets/tools/clickup.svg";
+import cloudflare from "../assets/tools/cloudflare.svg";
+import claude from "../assets/tools/claude.svg";
+import claudecode from "../assets/tools/claudecode.svg";
+import codex from "../assets/tools/codex.svg";
+import chatgpt from "../assets/tools/openai.svg";
+import antigravity from "../assets/tools/antigravity.svg";
+import daisyui from "../assets/tools/daisyui.svg";
+import vercel from "../assets/tools/vercel.svg";
+import python from "../assets/tools/python.svg";
 
 //Icons
 import { FaPencilRuler, FaLaptopCode, FaMobileAlt, FaDraftingCompass, FaCode, FaLayerGroup } from "react-icons/fa";
@@ -82,7 +103,7 @@ export const ABOUT_TEXT = `I am a highly motivated and detail-oriented professio
 
 export const EXPERIENCES = [
 
-  { 
+  {
     period: "NOV 2025 - PRESENT",
     location: "Davao City, Philippines",
     role: "Software Developer",
@@ -91,7 +112,7 @@ export const EXPERIENCES = [
     description: `Built a role-based incident and CCTV fault management platform for UK highway schemes. The system supports 5 distinct user roles — Admin, Staff, Client, Live Operator, and CCTV Fault Operator — each with tailored dashboards and access controls. Features include real-time live incident feeds, CCTV fault tracking with threaded chat, multi-form report submission, paginated & searchable report history, analytics with charts, PDF export, footage upload management, OTP-based user onboarding, and automated scheduled checks via Cloud Functions.`,
     technologies: ["React", "Vite", "Tailwind CSS", "Firebase", "Firestore", "Cloudflare"],
   },
-  
+
   {
     period: "NOV 2024 – APR 2026",
     location: "Massachusetts, USA (Remote)",
@@ -558,6 +579,7 @@ export const CERTIFICATIONS = [
   {
     title: "Cybersecurity Essentials",
     issuer: "Cisco Networking Academy",
+    issuerLogo: cisco,
     date: "Dec 16, 2023",
     category: "Cybersecurity",
     url: "https://www.credly.com/badges/d140deff-4808-4e59-86e7-cf9b4e2b2ab3",
@@ -565,6 +587,7 @@ export const CERTIFICATIONS = [
   {
     title: "Introduction to Cybersecurity",
     issuer: "Cisco Networking Academy",
+    issuerLogo: cisco,
     date: "May 15, 2023",
     category: "Cybersecurity",
     url: "https://www.credly.com/badges/893e6297-3452-44f7-98ef-f461c2591b18",
@@ -572,116 +595,74 @@ export const CERTIFICATIONS = [
   {
     title: "Introduction to Networks",
     issuer: "Cisco Networking Academy",
+    issuerLogo: cisco,
     date: "Jul 06, 2023",
     category: "Cybersecurity",
     url: "https://www.credly.com/badges/b538c5fd-883a-4d2f-87e2-159af5ea8cc2",
+  },
+  {
+    title: "Foundations of Cybersecurity",
+    issuer: "Coursera",
+    issuerLogo: coursera,
+    date: "Jul 31, 2026",
+    category: "Cybersecurity",
+    url: "https://www.coursera.org/account/accomplishments/verify/ATRMRNNZQ1RH?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
   },
 ];
 
 
 export const TECHNOLOGIES = [
-  { image: figma,       delay: 2,   name: "Figma",       category: "Design" },
-  { image: xd,          delay: 3,   name: "Adobe XD",    category: "Design" },
-  { image: photoshop,   delay: 2.5, name: "Photoshop",   category: "Design" },
-  { image: illustrator, delay: 6,   name: "Illustrator", category: "Design" },
-  { image: framer,      delay: 3.5, name: "Framer",      category: "Design" },
-  { image: html,        delay: 7,   name: "HTML5",       category: "Frontend" },
-  { image: css,         delay: 4,   name: "CSS3",        category: "Frontend" },
-  { image: js,          delay: 8.5, name: "JavaScript",  category: "Frontend" },
-  { image: typescript,  delay: 5.5, name: "TypeScript",  category: "Frontend" },
+   { image: react, delay: 1.5, name: "React", category: "Frontend" },
+  { image: vscode, delay: 3, name: "VS Code", category: "Developer Tools" },
+  { image: nodejs, delay: 5, name: "Node.js", category: "Backend & Database" },
+  { image: git, delay: 7, name: "Git", category: "Developer Tools" },
+  { image: github, delay: 2, name: "GitHub", category: "Developer Tools" },
+  { image: claudecode, delay: 4, name: "Claude Code", category: "AI & Machine Learning" },
+  { image: slack, delay: 6.5, name: "Slack", category: "Developer Tools" },
+  { image: cloudflare, delay: 2, name: "Cloudflare", category: "DevOps & Cloud" },
+  { image: supabase, delay: 3, name: "Supabase", category: "Backend & Database" },
 ];
 
 export const TECHNOLOGIES2 = [
-  { image: vite,      delay: 4,   name: "Vite",       category: "Frontend" },
-  { image: next,      delay: 2,   name: "Next.js",    category: "Frontend" },
-  { image: angular,   delay: 3.5, name: "Angular",    category: "Frontend" },
-  { image: tailwind,  delay: 6,   name: "Tailwind",   category: "Frontend" },
-  { image: bootstrap, delay: 5.5, name: "Bootstrap",  category: "Frontend" },
-  { image: php,       delay: 3,   name: "PHP",        category: "Backend & Database" },
-  { image: myadmin,   delay: 8,   name: "phpMyAdmin", category: "Backend & Database" },
-  { image: mysql,     delay: 7.5, name: "MySQL",      category: "Backend & Database" },
-  { image: firebase,  delay: 2,   name: "Firebase",   category: "Backend & Database" },
+  { image: vite, delay: 4, name: "Vite", category: "Frontend" },
+  { image: next, delay: 2, name: "Next.js", category: "Frontend" },
+  { image: angular, delay: 3.5, name: "Angular", category: "Frontend" },
+  { image: tailwind, delay: 6, name: "Tailwind", category: "Frontend" },
+  { image: bootstrap, delay: 5.5, name: "Bootstrap", category: "Frontend" },
+  { image: php, delay: 3, name: "PHP", category: "Backend & Database" },
+  { image: python, delay: 7, name: "Python", category: "Backend & Database" },
+  { image: myadmin, delay: 8, name: "phpMyAdmin", category: "Backend & Database" },
+  { image: mysql, delay: 7.5, name: "MySQL", category: "Backend & Database" },
+  { image: firebase, delay: 2, name: "Firebase", category: "Backend & Database" },
 ];
 
 export const TECHNOLOGIES3 = [
-  { image: react,     delay: 1.5, name: "React",     category: "Frontend" },
-  { image: ionic,     delay: 5,   name: "Ionic",     category: "Frontend" },
-  { image: flutter,   delay: 4,   name: "Flutter",   category: "Frontend" },
-  { image: wordpress, delay: 2,   name: "WordPress", category: "CMS & No-Code" },
-  { image: elementor, delay: 3.5, name: "Elementor", category: "CMS & No-Code" },
-  { image: git,       delay: 7,   name: "Git",       category: "Developer Tools" },
-  { image: fishbowl,  delay: 5.5, name: "Fishbowl",  category: "Developer Tools" },
-  { image: slack,     delay: 6.5, name: "Slack",     category: "Developer Tools" },
-  { image: skype,     delay: 2.5, name: "Skype",     category: "Developer Tools" },
+   { image: figma, delay: 2, name: "Figma", category: "Design" },
+  { image: xd, delay: 3, name: "Adobe XD", category: "Design" },
+  { image: framer, delay: 3.5, name: "Framer", category: "Design" },
+  { image: html, delay: 7, name: "HTML5", category: "Frontend" },
+  { image: css, delay: 4, name: "CSS3", category: "Frontend" },
+  { image: js, delay: 8.5, name: "JavaScript", category: "Frontend" },
+  { image: typescript, delay: 5.5, name: "TypeScript", category: "Frontend" },
+   { image: claude, delay: 2.5, name: "Claude", category: "AI & Machine Learning" },
+  { image: codex, delay: 5, name: "Codex", category: "AI & Machine Learning" },
 ];
 
 // Skills without an icon asset yet — shown as text-only placeholders on the
 // dedicated Skills page until a logo is added.
 export const EXTRA_SKILLS = [
-  { name: "Supabase",    delay: 3,   category: "Backend & Database" },
-  { name: "Node.js",     delay: 5,   category: "Backend & Database" },
-  { name: "Daisy UI",    delay: 7,   category: "Frontend" },
-  { name: "Cloudflare",  delay: 2,   category: "DevOps & Cloud" },
-  { name: "n8n",         delay: 3,   category: "CMS & No-Code" },
-  { name: "GoHighLevel", delay: 4.5, category: "CMS & No-Code" },
-  { name: "Claude",      delay: 2.5, category: "AI & Machine Learning" },
-  { name: "Claude Code", delay: 4,   category: "AI & Machine Learning" },
-  { name: "Codex",       delay: 5,   category: "AI & Machine Learning" },
-  { name: "ChatGPT",     delay: 3.5, category: "AI & Machine Learning" },
-  { name: "Antigravity", delay: 6,   category: "AI & Machine Learning" },
-  { name: "GitHub",      delay: 2,   category: "Developer Tools" },
-  { name: "VS Code",     delay: 3,   category: "Developer Tools" },
-  { name: "Discord",     delay: 4.5, category: "Developer Tools" },
-  { name: "ClickUp",     delay: 5.5, category: "Developer Tools" },
-];
-
-
-
-
-export const SERVICES = [
-  { 
-    icon: FaPencilRuler,   
-    title: "Graphic Design", 
-    description: "I specialize in logo design, jersey layouts, signage, social media posts, and certificates." 
-  },
-  { 
-    icon: FaDraftingCompass, 
-    title: "UI/UX Design", 
-    description: "Creating seamless and intuitive user experiences from wireframes to interactive designs." 
-  },
-  { 
-    icon: FaLaptopCode, 
-    title: "Prototyping", 
-    description: "Building responsive websites using PHP, HTML, CSS, Vite.js, and React." 
-  },
-  { 
-    icon: FaLayerGroup, 
-    title: "Wireframing", 
-    description: "Designing wireframes to outline clear user flows and layouts for websites and apps." 
-  },
-  { 
-    icon: FaCode, 
-    title: "Web Dev", 
-    description: "Building dynamic websites using PHP, HTML, CSS, Vite.js, and React." 
-  },
-  { 
-    icon: FaMobileAlt, 
-    title: "Mobile Dev", 
-    description: "Developing apps using Flutter and Ionic Angular for iOS and Android." 
-  },
-  { 
-    icon: MdSupportAgent, 
-    title: "IT Support",
-    description: "Providing technical support to students and faculty, troubleshooting hardware and software issues." 
-  },
-  { 
-    icon: MdChatBubble, 
-    title: "Chat Support",
-    description: "Resolving customer inquiries and providing real-time delivery tracking and support." 
-  },
-  { 
-    icon: MdWorkOutline, 
-    title: "Virtual Assistant",
-    description: "Assisting clients with administrative tasks, email management, and customer support." 
-  },
+  { image: discord, delay: 4.5, name: "Discord", category: "Developer Tools" },
+  { image: photoshop, delay: 2.5, name: "Photoshop", category: "Design" },
+  { image: illustrator, delay: 6, name: "Illustrator", category: "Design" },
+  { image: daisyui, delay: 7, name: "Daisy UI", category: "Frontend" },
+  { image: vercel, delay: 5, name: "Vercel", category: "DevOps & Cloud" },
+  { image: n8n, delay: 3, name: "n8n", category: "CMS & No-Code" },
+  { image: ghl, delay: 4.5, name: "GoHighLevel", category: "CMS & No-Code" },
+  { image: chatgpt, delay: 3.5, name: "ChatGPT", category: "AI & Machine Learning" },
+  { image: antigravity, delay: 6, name: "Antigravity", category: "AI & Machine Learning" },
+  { image: ionic, delay: 5, name: "Ionic", category: "Frontend" },
+  { image: flutter, delay: 4, name: "Flutter", category: "Frontend" },
+  { image: wordpress, delay: 2, name: "WordPress", category: "CMS & No-Code" },
+  { image: elementor, delay: 3.5, name: "Elementor", category: "CMS & No-Code" },
+  { image: clickup, delay: 5.5, name: "ClickUp", category: "Developer Tools" },
 ];

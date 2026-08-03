@@ -32,9 +32,9 @@ const Sidebar = ({ onNavigate }) => {
   return (
     <div className="flex h-full flex-col bg-white/5 border-r border-white/10 backdrop-blur-[1.4px] px-6 py-8">
       {/* Logo */}
-      <a href="/" aria-label="Home" className="flex items-center gap-3 mb-10">
-        <img src={logo} className="h-10 w-auto" alt="logo" />
-        <span className="text-xl font-semibold uppercase tracking-wide text-stone-100">Rod Javinz</span>
+      <a href="/" aria-label="Home" className="flex items-center gap-5 mb-10">
+        <img src={logo} className="h-12 w-auto" alt="logo" />
+        <span className="text-xl font-medium uppercase tracking-wide text-stone-100">Rod  Du-ot</span>
       </a>
 
       {/* Nav */}

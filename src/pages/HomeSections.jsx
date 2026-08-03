@@ -2,6 +2,14 @@ import { Link, useNavigate } from "react-router-dom"
 import { motion } from "framer-motion"
 import profilePic from "../assets/rodprofile.png"
 import contributionsChart from "../assets/github-contributions.svg?raw"
+import blueShape1 from "../assets/shapes/blue/shape1blue.svg"
+import blueShape2 from "../assets/shapes/blue/shape2blue.svg"
+import blueShape3 from "../assets/shapes/blue/shape3blue.svg"
+import blueShape4 from "../assets/shapes/blue/shape4blue.svg"
+import whiteShape1 from "../assets/shapes/white/Shape1white.svg"
+import whiteShape2 from "../assets/shapes/white/shape2white.svg"
+import whiteShape3 from "../assets/shapes/white/shape3white.svg"
+import whiteShape4 from "../assets/shapes/white/shape4white.svg"
 import { HERO_CONTENT, TECHNOLOGIES, TECHNOLOGIES2, TECHNOLOGIES3, PROJECTS, EXPERIENCES } from "../constants"
 import { floatVariants } from "../utils/floatVariants"
 
@@ -17,13 +25,13 @@ const childVariants = {
 
 export const Hero = () => {
   return (
-    <div id="hero" className="pb-4 lg:mb-36">
+    <div id="hero" className="">
       <div className="flex flex-wrap lg:flex-row-reverse lg:items-center">
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center lg:justify-end">
             <motion.img
               src={profilePic}
-              alt="Rod DU-ot"
+              alt="Rod Javinz"
               width={650}
               height={650}
               className="h-[460px] w-auto max-w-full object-contain"
@@ -35,10 +43,10 @@ export const Hero = () => {
         </div>
         <div className="w-full lg:w-1/2">
           <motion.div initial="hidden" animate="visible" variants={containerVariants} className="flex flex-col lg:items-start sm:items-center">
-            <motion.h1 variants={childVariants} className="mt-5 pb-2 text-4xl font-bold text-stone-100 tracking-wider uppercase lg:text-8xl sm:text-7xl">
+            <motion.h1 variants={childVariants} className="mt-5 pb-2 text-xl font-semibold text-stone-100 tracking-wider uppercase lg:text-8xl sm:text-7xl">
               Rod Du-ot
             </motion.h1>
-            <motion.span variants={childVariants} className="mt-2 text-xl font-medium text-stone-200"> Software Developer | UI/UX Designer | Virtual Assistant</motion.span>
+            <motion.span variants={childVariants} className="mt-2 text-xl font-medium text-stone-200"> Software Engineer | UI/UX Designer | Virtual Assistant</motion.span>
             <motion.p variants={childVariants} className="my-2 mx-w-lg py-6 text-md leading-[1.8] tracking-tighter text-sm">
               {HERO_CONTENT}
             </motion.p>
@@ -46,7 +54,7 @@ export const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               download
-              className="bg-blue-600 rounded-full p-3 pl-6 pr-6 text-md font-medium mb-10 hover:bg-blue-800 hover:text-stone-100">
+              className="bg-blue-600  text-white rounded-full p-3 pl-6 pr-6 text-md font-semibold mb-10 hover:bg-blue-800 hover:text-stone-100">
               Download Resume
             </motion.a>
 
@@ -57,10 +65,12 @@ export const Hero = () => {
   )
 }
 
-const ROLES = ["Software Developer", "UI/UX Designer", "Web Developer"]
-const REPEAT_COUNT = 6
+const ROLES = ["Software Engineer", "UI/UX Designer", "Web Developer", "Cybersecurity Enthusiast", "Virtual Assistant"]
+const REPEAT_COUNT = 100
 const LOOP_ITEMS = Array.from({ length: REPEAT_COUNT }, () => ROLES).flat()
-const LOOP_SHIFT = `${-100 / REPEAT_COUNT}%`
+const LOOP_SHIFT = `${-70 / REPEAT_COUNT}%`
+const BLUE_SHAPES = [blueShape1, blueShape2, blueShape3, blueShape4]
+const WHITE_SHAPES = [whiteShape1, whiteShape2, whiteShape3, whiteShape4]
 
 const RibbonTrack = ({ animate, children }) => (
   <motion.div
@@ -73,10 +83,10 @@ const RibbonTrack = ({ animate, children }) => (
 )
 
 export const RoleStrip = () => (
-  <div className="relative my-24 h-56 lg:h-64">
+  <div className="relative mt-24 h-56  ">
     {/* Ribbon 1 — glass style, scrolls left */}
     <div
-      className="absolute inset-x-0 top-[38%] -translate-y-1/2 -rotate-6 overflow-hidden border-y border-white/10 bg-white/5 py-4 backdrop-blur-sm shadow-xl [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
+      className="absolute inset-x-0 top-[50%] -translate-y-1 -rotate-7 overflow-hidden border-y border-white/10 bg-white/5 py-4 backdrop-blur-sm shadow-xl [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
     >
       <RibbonTrack animate={{ x: ["0%", LOOP_SHIFT] }}>
         {LOOP_ITEMS.map((role, index) => (
@@ -84,7 +94,7 @@ export const RoleStrip = () => (
             <span className="whitespace-nowrap px-6 text-lg font-semibold uppercase tracking-tight text-stone-100 lg:text-2xl">
               {role}
             </span>
-            <span className="text-base text-blue-500 lg:text-lg">•</span>
+            <img src={BLUE_SHAPES[index % BLUE_SHAPES.length]} alt="" className="h-7 w-7 lg:h-8 lg:w-8" />
           </div>
         ))}
       </RibbonTrack>
@@ -92,7 +102,7 @@ export const RoleStrip = () => (
 
     {/* Ribbon 2 — solid blue accent, scrolls right */}
     <div
-      className="absolute inset-x-0 top-[62%] -translate-y-1/2 rotate-6 overflow-hidden border-y border-blue-400/30 bg-blue-600 py-4 shadow-xl [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
+      className="absolute inset-x-0 top-[62%] -translate-y-1/2 rotate-7 overflow-hidden border-y border-blue-400/30 bg-blue-600 py-4 shadow-xl [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
     >
       <RibbonTrack animate={{ x: [LOOP_SHIFT, "0%"] }}>
         {LOOP_ITEMS.map((role, index) => (
@@ -100,7 +110,7 @@ export const RoleStrip = () => (
             <span className="whitespace-nowrap px-6 text-lg font-semibold uppercase tracking-tight text-white lg:text-2xl">
               {role}
             </span>
-            <span className="text-base text-blue-950 lg:text-lg">•</span>
+            <img src={WHITE_SHAPES[index % WHITE_SHAPES.length]} alt="" className="h-7 w-7 lg:h-8 lg:w-8" />
           </div>
         ))}
       </RibbonTrack>
@@ -115,7 +125,7 @@ export const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-24 mt-26 text-center text-4xl"
       >
         {" "}
         Technologies / Tools

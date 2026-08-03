@@ -65,8 +65,12 @@ const CertificationsPage = () => {
                     rel="noopener noreferrer"
                     className={`bg-white/5 border border-white/15 backdrop-blur-[1.4px] rounded-xl p-6 flex flex-col cursor-pointer hover:border-white/30 transition-transform duration-300 ease-out hover:rotate-0 ${TILT_CLASSES[index % TILT_CLASSES.length]}`}
                   >
-                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500/10 text-blue-400 mb-5">
-                      <FiAward size={22} />
+                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500/10 text-blue-400 mb-5 overflow-hidden">
+                      {cert.issuerLogo ? (
+                        <img src={cert.issuerLogo} alt={cert.issuer} className="w-7 h-7 object-contain" />
+                      ) : (
+                        <FiAward size={22} />
+                      )}
                     </div>
                     <h3 className="font-semibold text-lg mb-1 text-stone-100">{cert.title}</h3>
                     <p className="text-sm text-stone-400 mb-4">{cert.issuer}</p>
